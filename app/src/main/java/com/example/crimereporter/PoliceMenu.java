@@ -18,6 +18,7 @@ public class PoliceMenu extends AppCompatActivity {
         editprofilepolicemenu = findViewById(R.id.policemenueditprofile);
         viewsospolicemenu = findViewById(R.id.policemenuviewsos);
         criminalpolicemenu = findViewById(R.id.policemenucriminal);
+        logoutpolicemenu=findViewById(R.id.policemenulogout);
 
         viewcomplpolicemenu.setOnClickListener(new View.OnClickListener() {
             @Override
