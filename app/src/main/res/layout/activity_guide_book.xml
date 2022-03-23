@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserGuideBook">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/guidelinearone"
+        android:layout_marginTop="50sp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Things to do"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:id="@+id/guidebookthingtodo"
+            ></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Call your local police helpline, like 100."
+            android:textSize="18dp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            ></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. If someone is injured or has an life threatening wound, call an ambulance."
+            android:textSize="18dp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            ></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. Don't try to be a hero, call police immediately."
+            android:textSize="18dp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            ></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/guidelineartwo"
+        android:layout_below="@id/guidelinearone"
+        android:layout_marginTop="75sp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Things NOT to do"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            ></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Don't try to provide any first aid to the injured, unless you are a professional."
+            android:textSize="18dp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            ></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Don't touch anything if you are at a crime scene."
+            android:textSize="18dp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            ></TextView>
+
+    </LinearLayout>
+
+</RelativeLayout>

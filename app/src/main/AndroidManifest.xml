@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.crimereporter">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android:permission.ACCESS_COARSE_LOCATION"
+        android:maxSdkVersion="22"
+        />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CrimeReporter">
+        <activity
+            android:name=".UserCurrentAddress"
+            android:exported="false" />
+        <activity
+            android:name=".PoliceEditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".PoliceMenu"
+            android:exported="false" />
+        <activity
+            android:name=".PoliceRegister"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAhnrDOBmYD6n-xXBRvSNDtWIhz0ILgdN4" />
+
+        <activity
+            android:name=".UserRegSOS"
+            android:exported="false" />
+        <activity
+            android:name=".UserGuideBook"
+            android:exported="false" />
+        <activity
+            android:name=".UserEditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".UserCrimeRate"
+            android:exported="false" />
+        <activity
+            android:name=".PoliceLogin"
+            android:exported="false" />
+        <activity
+            android:name=".ChooseUser"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserComplaint"
+            android:exported="false" />
+        <activity
+            android:name=".UserLogin"
+            android:exported="false" />
+        <activity
+            android:name=".UserMenu"
+            android:exported="false" />
+        <activity
+            android:name=".UserSignUp"
+            android:exported="false" />
+    </application>
+
+</manifest>

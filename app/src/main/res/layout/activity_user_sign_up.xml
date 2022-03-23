@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Sign Up"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:id="@+id/tvsignup"
+        />
+
+    <EditText
+        android:id="@+id/usersignupfirstname"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
+        android:text=""
+        android:hint="Enter First Name"
+        android:layout_below="@+id/tvsignup"
+        />
+
+    <EditText
+        android:id="@+id/usersignuplastname"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/usersignupfirstname"
+        android:layout_marginTop="10sp"
+        android:text=""
+        android:hint="Enter Last Name"/>
+
+    <EditText
+        android:id="@+id/usersignupaddress"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:hint="Enter Address"
+        android:layout_below="@+id/usersignuplastname"
+        android:layout_marginTop="10sp"
+        />
+
+    <EditText
+        android:id="@+id/usersignupemail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/usersignupaddress"
+        android:layout_marginTop="10sp"
+        android:text=""
+        android:hint="Enter Email"
+        />
+
+    <EditText
+        android:id="@+id/usersignupnationality"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/usersignupemail"
+        android:layout_marginTop="10sp"
+        android:text=""
+        android:hint="Nationality"
+        />
+
+    <EditText
+        android:id="@+id/usersignupaadhar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/usersignupnationality"
+        android:layout_marginTop="10sp"
+        android:text=""
+        android:hint="Enter Aadhar No" />
+
+    <EditText
+        android:id="@+id/usersignupphone"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/usersignupaadhar"
+        android:layout_marginTop="10sp"
+        android:text=""
+        android:hint="Enter Phone" />
+
+    <Button
+        android:id="@+id/usersignupdatepickerbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date of Birth"
+        android:textColor="@color/black"
+        style="?android:spinnerStyle"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/usersignupphone"
+        android:layout_marginTop="10sp"
+        android:onClick="openDatePicker"
+        />
+
+    <EditText
+        android:id="@+id/usersignupusername"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/usersignupdatepickerbutton"
+        android:layout_marginTop="10sp"
+        android:text=""
+        android:hint="Username"
+        />
+
+    <EditText
+        android:id="@+id/usersignuppassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:hint="Enter Password"
+        android:layout_marginTop="10sp"
+        android:layout_below="@id/usersignupusername"
+        >
+    </EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="SUBMIT"
+        android:layout_below="@+id/usersignuppassword"
+        android:layout_marginTop="15sp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Crime Reporter</string>
+
+    <string-array name="names">
+        <item>Select</item>
+        <item>First Name</item>
+        <item>Last Name</item>
+        <item>Address</item>
+        <item>Email</item>
+        <item>Nationality</item>
+        <item>Phone</item>
+        <item>Date Of Birth</item>
+        <item>Username</item>
+        <item>Password</item>
+    </string-array>
+
+    <string-array name="policenames">
+        <item>Select</item>
+        <item>First Name</item>
+        <item>Last Name</item>
+        <item>Address</item>
+        <item>Email</item>
+        <item>Batch No</item>
+        <item>Aadhar No</item>
+        <item>Phone</item>
+        <item>Date Of Birth</item>
+        <item>Username</item>
+        <item>Password</item>
+    </string-array>
+</resources>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Registration"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:id="@+id/policeregsignup"
+        />
+
+    <EditText
+        android:id="@+id/policeregfirstname"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
+        android:text=""
+        android:hint="Enter First Name"
+        android:layout_below="@+id/policeregsignup"
+        />
+
+    <EditText
+        android:id="@+id/policereglastname"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/policeregfirstname"
+        android:layout_marginTop="10sp"
+        android:text=""
+        android:hint="Enter Last Name"/>
+
+    <EditText
+        android:id="@+id/policeregaddress"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:hint="Enter Address"
+        android:layout_below="@+id/policereglastname"
+        android:layout_marginTop="10sp"
+        />
+
+    <EditText
+        android:id="@+id/policeregemail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/policeregaddress"
+        android:layout_marginTop="10sp"
+        android:text=""
+        android:hint="Enter Email"
+        />
+
+    <EditText
+        android:id="@+id/policeregbatchno"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/policeregemail"
+        android:layout_marginTop="10sp"
+        android:text=""
+        android:hint="Enter Batch No"
+        />
+
+    <EditText
+        android:id="@+id/policeregaadhar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/policeregbatchno"
+        android:layout_marginTop="10sp"
+        android:text=""
+        android:hint="Enter Aadhar No"
+        />
+
+    <EditText
+        android:id="@+id/policeregphone"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/policeregaadhar"
+        android:layout_marginTop="10sp"
+        android:text=""
+        android:hint="Enter Phone" />
+
+    <Button
+        android:id="@+id/policeregdatepickerbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date of Birth"
+        android:textColor="@color/black"
+        style="?android:spinnerStyle"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/policeregphone"
+        android:layout_marginTop="10sp"
+        android:onClick="openDatePicker"
+        />
+
+    <EditText
+        android:id="@+id/policeregusername"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/policeregdatepickerbutton"
+        android:layout_marginTop="10sp"
+        android:text=""
+        android:hint="Username"
+        />
+
+    <EditText
+        android:id="@+id/policeregpassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:hint="Enter Password"
+        android:layout_marginTop="10sp"
+        android:layout_below="@id/policeregusername"
+        >
+    </EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="SUBMIT"
+        android:layout_below="@+id/policeregpassword"
+        android:layout_marginTop="10sp"
+        />
+
+</RelativeLayout>
