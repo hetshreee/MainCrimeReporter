@@ -29,11 +29,11 @@
         />
 
     <EditText
-        android:id="@+id/userloginusername"
+        android:id="@+id/userloginemail"
         android:layout_width="300dp"
         android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
-        android:hint="Enter Username"
+        android:hint="Enter Email"
         android:layout_below="@id/user"
         android:layout_marginTop="50sp"
         />
@@ -43,7 +43,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
-        android:layout_below="@id/userloginusername"
+        android:layout_below="@id/userloginemail"
         android:hint="Enter Password"
         android:layout_centerHorizontal="true"
         >
@@ -60,14 +60,24 @@
         android:layout_marginTop="50sp"
         />
 
-    <Button
+    <TextView
         android:id="@+id/userloginsignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:text="Sign UP"
         android:layout_below="@id/userloginsignin"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/userloginforgotpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:layout_below="@id/userloginsignup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
         />
 
 </RelativeLayout>

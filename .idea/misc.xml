@@ -3,7 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_choose_user.xml" value="0.16" />
+        <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_choose_user.xml" value="0.25" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_complaint.xml" value="0.20416666666666666" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_crime_rate.xml" value="0.15537059056678557" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_dashboard.xml" value="0.20416666666666666" />
@@ -23,7 +23,7 @@
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_user_current_address.xml" value="0.1675929884566054" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_user_edit_profile.xml" value="0.1675929884566054" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_user_login.xml" value="0.20416666666666666" />
-        <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_user_menu.xml" value="0.18" />
+        <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_user_menu.xml" value="0.25" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_user_reg_sos.xml" value="0.1675929884566054" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_user_sign_up.xml" value="0.18" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_user_sos_location.xml" value="0.1675929884566054" />

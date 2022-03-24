@@ -37,7 +37,7 @@
                 android:layout_gravity="center_vertical|center_horizontal">
                 <ImageView
                     android:layout_width="75dp"
-                    android:layout_height="75dp"
+                    android:layout_height="50dp"
                     android:src="@drawable/complaintphoto"
                     android:id="@+id/policemenuviewcompl"
                     />
@@ -69,8 +69,8 @@
                 android:gravity="center"
                 android:layout_gravity="center_vertical|center_horizontal">
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="75dp"
+                    android:layout_height="50dp"
                     android:src="@drawable/sos"
                     android:id="@+id/policemenuviewsos"
                     />
@@ -105,7 +105,7 @@
                 android:layout_gravity="center_vertical|center_horizontal">
                 <ImageView
                     android:layout_width="75dp"
-                    android:layout_height="75dp"
+                    android:layout_height="50dp"
                     android:src="@drawable/bar"
                     android:id="@+id/policemenucrimerate"
                     />
@@ -137,8 +137,8 @@
                 android:gravity="center"
                 android:layout_gravity="center_vertical|center_horizontal">
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="75dp"
+                    android:layout_height="50dp"
                     android:src="@drawable/resume"
                     android:id="@+id/policemenueditprofile"
                     />
@@ -165,13 +165,13 @@
             >
             <LinearLayout
                 android:layout_width="75dp"
-                android:layout_height="75dp"
+                android:layout_height="83dp"
                 android:orientation="vertical"
                 android:gravity="center"
                 android:layout_gravity="center_vertical|center_horizontal">
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="75dp"
+                    android:layout_height="50dp"
                     android:src="@drawable/criminal"
                     android:id="@+id/policemenucriminal"
                     />
@@ -203,8 +203,8 @@
                 android:gravity="center"
                 android:layout_gravity="center_vertical|center_horizontal">
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="75dp"
+                    android:layout_height="50dp"
                     android:src="@drawable/logout"
                     android:id="@+id/policemenulogout"
                     />
