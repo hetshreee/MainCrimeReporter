@@ -6,10 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 public class ChooseUser extends AppCompatActivity {
 
-    ImageButton policechooseuser,publicchooseuser;
+    ImageView policechooseuser,publicchooseuser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +31,7 @@ public class ChooseUser extends AppCompatActivity {
         publicchooseuser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent1 = new Intent(getApplicationContext(), UserLogin.class);
+                Intent intent1 = new Intent(getApplicationContext(), Login_Signup.class);
                 startActivity(intent1);
             }
         });

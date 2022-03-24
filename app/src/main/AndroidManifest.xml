@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.crimereporter">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android:permission.ACCESS_COARSE_LOCATION"
-        android:maxSdkVersion="22"
-        />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission
+        android:name="android:permission.ACCESS_COARSE_LOCATION"
+        android:maxSdkVersion="22" />
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        tools:ignore="CoarseFineLocation" />
 
     <application
         android:allowBackup="true"
@@ -16,6 +19,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CrimeReporter">
+        <activity
+            android:name=".Login_Signup"
+            android:exported="false"
+            android:parentActivityName=".ChooseUser"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
         <activity
             android:name=".UserCurrentAddress"
             android:exported="false" />
@@ -50,7 +58,8 @@
             android:exported="false" />
         <activity
             android:name=".ChooseUser"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
         <activity
             android:name=".SplashScreen"
             android:exported="true"
@@ -69,9 +78,6 @@
             android:exported="false" />
         <activity
             android:name=".UserMenu"
-            android:exported="false" />
-        <activity
-            android:name=".UserSignUp"
             android:exported="false" />
     </application>
 
