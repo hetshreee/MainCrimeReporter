@@ -1,5 +1,6 @@
 package com.example.crimereporter;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -14,8 +15,12 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthException;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class UserSignUp extends AppCompatActivity {
 
@@ -75,6 +80,32 @@ public class UserSignUp extends AppCompatActivity {
                     passwordusersignup.requestFocus();
                     return;
                 }
+
+                mAuth.createUserWithEmailAndPassword(emailsignupuser,passwordsignupuser)
+                        .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                            @Override
+                            public void onComplete(@NonNull Task<AuthResult> task) {
+                                if(task.isSuccessful()){
+                                    SignUpUser signUpUser = new SignUpUser(firstnamesignupuser,lastnamesignupuser,addresssignupuser,nationalitysignupuser
+                                            ,aadharsignupuser,phonesignupuser,agesignupuser,emailsignupuser
+                                            ,passwordsignupuser);
+                                    FirebaseDatabase.getInstance().getReference("Users")
+                                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+                                            .setValue(signUpUser).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                        @Override
+                                        public void onComplete(@NonNull Task<Void> task) {
+                                            if(task.isSuccessful()){
+                                                Toast.makeText(UserSignUp.this,"User Sign Up Successful",Toast.LENGTH_SHORT).show();
+                                            }else{
+                                                Toast.makeText(UserSignUp.this,"Failed to Sign Up! Try Again",Toast.LENGTH_SHORT).show();
+                                            }
+                                        }
+                                    });
+                                }else{
+                                    Toast.makeText(UserSignUp.this,"Failed to Sign Up! Try Again",Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                        });
             }
         });
 
