@@ -28,9 +28,17 @@
         <item>Password</item>
     </string-array>
 
-    <string-array name="statistics">
+    <string-array name="cases">
         <item>Select</item>
 
+    </string-array>
+
+    <string-array name="statistics">
+        <item>Murder</item>
+        <item>Robbery</item>
+        <item>Identity Theft</item>
+        <item>Cybercrime</item>
+        <item>Rape</item>
     </string-array>
 
 </resources>
