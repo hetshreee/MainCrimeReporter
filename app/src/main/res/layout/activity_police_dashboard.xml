@@ -8,19 +8,17 @@
     android:background="#e4e4e4"
     tools:context=".PoliceDashboard"
     >
-
     <View
-        android:id="@+id/view"
+        android:id="@+id/pdview"
         android:layout_width="match_parent"
         android:layout_height="128dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="#293859"/>
-
-
+        android:background="#293859"
+        />
     <TextView
-        android:id="@+id/dashboard"
+        android:id="@+id/pddashboard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -30,19 +28,19 @@
         android:textSize="28dp"
         android:textAlignment="center"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints" />
-
-    <ImageButton
+        tools:ignore="MissingConstraints"
+        />
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/menu"
         android:background="@android:color/transparent"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        tools:ignore="MissingConstraints" />
-
+        tools:ignore="MissingConstraints"
+        />
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/pdlinear1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -51,6 +49,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="140dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/pdview"
         >
         <androidx.cardview.widget.CardView
             android:id="@+id/contributeCard"
@@ -62,25 +62,25 @@
             android:elevation="12dp"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
-            app:cardCornerRadius="8dp">
-
+            app:cardCornerRadius="8dp"
+            >
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
                 <ImageView
-                    android:id="@+id/ivbar"
+                    android:id="@+id/pdbariv"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:background="@android:color/transparent"
                     android:src="@drawable/bar"
-                    app:layout_constraintBottom_toTopOf="@+id/tvbar"
+                    app:layout_constraintBottom_toTopOf="@+id/pdbartv"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
                 <TextView
-                    android:id="@+id/tvbar"
+                    android:id="@+id/pdbartv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -92,12 +92,10 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/ivbar"
+                    app:layout_constraintTop_toBottomOf="@+id/pdbariv"
                     />
-
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
-
         <androidx.cardview.widget.CardView
             android:id="@+id/practiceCard"
             android:layout_width="145dp"
@@ -109,30 +107,27 @@
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
             app:cardCornerRadius="8dp">
-
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-
-                <ImageButton
-                    android:id="@+id/image_view20"
+                <ImageView
+                    android:id="@+id/pdcomiv"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/newemail"
+                    android:layout_height="50dp"
+                    android:src="@drawable/complaintphoto"
                     android:background="@android:color/transparent"
-                    app:layout_constraintBottom_toTopOf="@+id/textView20"
+                    app:layout_constraintBottom_toTopOf="@+id/pdcomtv"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     />
-
                 <TextView
-                    android:id="@+id/textView20"
+                    android:id="@+id/pdcomtv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="MESSAGES"
+                    android:text="CASES"
                     android:textAllCaps="true"
                     android:textSize="15dp"
                     android:textStyle="bold"
@@ -140,16 +135,14 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/image_view20" />
-
+                    app:layout_constraintTop_toBottomOf="@+id/pdcomiv"
+                    />
             </androidx.constraintlayout.widget.ConstraintLayout>
-
         </androidx.cardview.widget.CardView>
-
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
+        android:id="@+id/pdlinear2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -157,8 +150,7 @@
         android:weightSum="2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
-
+        app:layout_constraintTop_toBottomOf="@+id/pdlinear1">
         <androidx.cardview.widget.CardView
             android:id="@+id/learnCard"
             android:layout_width="145dp"
@@ -170,25 +162,22 @@
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
             app:cardCornerRadius="8dp">
-
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-
-                <ImageButton
-                    android:id="@+id/image_view21"
+                <ImageView
+                    android:id="@+id/pdconiv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
                     android:src="@drawable/telephone"
-                    app:layout_constraintBottom_toTopOf="@+id/textView21"
+                    app:layout_constraintBottom_toTopOf="@+id/pdcontv"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
-
                 <TextView
-                    android:id="@+id/textView21"
+                    android:id="@+id/pdcontv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -200,12 +189,9 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/image_view21" />
-
+                    app:layout_constraintTop_toBottomOf="@+id/pdconiv" />
             </androidx.constraintlayout.widget.ConstraintLayout>
-
         </androidx.cardview.widget.CardView>
-
         <androidx.cardview.widget.CardView
             android:id="@+id/interestsCard"
             android:layout_width="145dp"
@@ -217,25 +203,23 @@
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
             app:cardCornerRadius="8dp">
-
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-
-                <ImageButton
-                    android:id="@+id/image_view22"
+                <ImageView
+                    android:id="@+id/pdinviv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
                     android:src="@drawable/investigation"
-                    app:layout_constraintBottom_toTopOf="@+id/textView22"
+                    app:layout_constraintBottom_toTopOf="@+id/pdinvtv"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/textView22"
+                    android:id="@+id/pdinvtv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -247,12 +231,9 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/image_view22" />
-
+                    app:layout_constraintTop_toBottomOf="@+id/pdinviv" />
             </androidx.constraintlayout.widget.ConstraintLayout>
-
         </androidx.cardview.widget.CardView>
-
     </LinearLayout>
 
     <LinearLayout
@@ -263,8 +244,9 @@
         android:weightSum="2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
-
+        app:layout_constraintTop_toBottomOf="@+id/pdlinear2"
+        android:id="@+id/pdlinear3"
+        >
         <androidx.cardview.widget.CardView
             android:id="@+id/helpCard"
             android:layout_width="145dp"
@@ -275,26 +257,25 @@
             android:elevation="12dp"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
-            app:cardCornerRadius="8dp">
-
+            app:cardCornerRadius="8dp"
+            >
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-
-                <ImageButton
-                    android:id="@+id/image_view23"
+                <ImageView
+                    android:id="@+id/pdsosiv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:src="@drawable/danger"
-                    app:layout_constraintBottom_toTopOf="@+id/textView23"
+                    app:layout_constraintBottom_toTopOf="@+id/pdsostv"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     android:background="@android:color/transparent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
                 <TextView
-                    android:id="@+id/textView23"
+                    android:id="@+id/pdsostv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -306,12 +287,10 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/image_view23" />
-
+                    app:layout_constraintTop_toBottomOf="@+id/pdsosiv"
+                    />
             </androidx.constraintlayout.widget.ConstraintLayout>
-
         </androidx.cardview.widget.CardView>
-
         <androidx.cardview.widget.CardView
             android:id="@+id/settingsCard"
             android:layout_width="145dp"
@@ -323,25 +302,23 @@
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
             app:cardCornerRadius="8dp">
-
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-
-                <ImageButton
-                    android:id="@+id/image_view"
+                <ImageView
+                    android:id="@+id/pdtaskiv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:src="@drawable/checklist"
-                    app:layout_constraintBottom_toTopOf="@+id/textView4"
+                    app:layout_constraintBottom_toTopOf="@+id/pdtasktv"
                     app:layout_constraintEnd_toEndOf="parent"
                     android:background="@android:color/transparent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
                 <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/pdtasktv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -353,12 +330,9 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/image_view" />
-
+                    app:layout_constraintTop_toBottomOf="@+id/pdtaskiv"
+                    />
             </androidx.constraintlayout.widget.ConstraintLayout>
-
         </androidx.cardview.widget.CardView>
-
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,32 +6,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PoliceCaseDet">
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/rightarrow"
-        android:layout_marginLeft="350dp"
-        android:layout_marginTop="10dp"
-        android:background="@android:color/transparent"/>
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Case #1052150"
+        android:text="Case Details"
         android:layout_centerHorizontal="true"
         android:textSize="26dp"
-        android:textColor="@color/black"/>
-
-    <TextView
+        android:textColor="@color/black"
+        />
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Details"
+        android:hint="Case Number"
         android:textColor="@color/black"
         android:textSize="23dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"/>
-
+        android:layout_marginTop="40dp"
+        android:id="@+id/pcdcasenoet"
+        />
 
     <TextView
         android:id="@+id/cdvicname"
@@ -40,9 +32,9 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="90dp"
         android:text="Victim Name:"
+        android:textColor="@color/black"
         android:textSize="20dp"
-        android:textColor="@color/black"/>
-
+        />
     <Space
         android:id="@+id/cdvicnamesp"
         android:layout_width="20dp"
@@ -50,45 +42,41 @@
         android:layout_weight="1"
         android:layout_toRightOf="@+id/cdvicname"
         android:layout_marginTop="90dp"/>
-
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/cdvicnamesp"
         android:layout_marginTop="90dp"
-        android:text="get text from database"
         android:textSize="20dp"
         android:id="@+id/cdvicnametv"
         />
-
     <TextView
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Crime scene location"
+        android:text="Crime Scene Location"
         android:layout_marginTop="130dp"
         android:textSize="20dp"
         android:textColor="@color/black"
         android:layout_marginLeft="20dp"
         android:id="@+id/cdcsloc"
         />
-
     <Space
         android:id="@+id/cdcslocsp"
         android:layout_width="20dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:layout_toRightOf="@+id/cdcsloc"
-        android:layout_marginTop="130dp"/>
+        android:layout_marginTop="130dp"
+        />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/cdcslocsp"
-        android:layout_marginTop="130dp"
-        android:text="get text from database"
-        android:textSize="20dp"
         android:id="@+id/cdcsloctv"
-        />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:layout_toRightOf="@+id/cdcslocsp"
+        android:text=""
+        android:textSize="20dp" />
 
     <TextView
         android:layout_width="150dp"
@@ -100,62 +88,69 @@
         android:layout_marginLeft="20dp"
         android:id="@+id/cde"
         />
-
     <Space
         android:id="@+id/cdesp"
         android:layout_width="20dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:layout_toRightOf="@+id/cde"
-        android:layout_marginTop="190dp"/>
+        android:layout_marginTop="190dp"
+        />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/cdesp"
         android:layout_marginTop="190dp"
-        android:text="get text/image from database"
+        android:text=""
         android:textSize="20dp"
         android:id="@+id/cdetv"
         />
 
-    <ImageView
-        android:layout_width="200dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/puccon1"
+        android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="230dp"
-        android:src="@drawable/imagegallery"
-        />
+        android:layout_below="@+id/cdetv"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/gallery"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
+        android:id="@+id/cdrep"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Reported by"
-        android:layout_marginTop="500dp"
-        android:textSize="20dp"
-        android:textColor="@color/black"
         android:layout_marginLeft="20dp"
-        android:id="@+id/cdrep"
+        android:layout_marginTop="500dp"
+        android:text="Reported by"
+        android:textColor="@color/black"
+        android:textSize="20dp"
         />
-
     <Space
         android:id="@+id/cdrepsp"
         android:layout_width="20dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:layout_toRightOf="@+id/cdrep"
-        android:layout_marginTop="500dp"/>
-
+        android:layout_marginTop="500dp"
+        />
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/cdrepsp"
         android:layout_marginTop="500dp"
-        android:text="get text from database"
+        android:text=""
         android:textSize="20dp"
         android:id="@+id/cdreptv"
         />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -166,27 +161,25 @@
         android:layout_marginLeft="20dp"
         android:id="@+id/cdsts"
         />
-
     <Space
         android:id="@+id/cdstssp"
         android:layout_width="20dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:layout_toRightOf="@+id/cdsts"
-        android:layout_marginTop="540dp"/>
-
+        android:layout_marginTop="540dp"
+        />
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/cdstssp"
         android:layout_marginTop="540dp"
-        android:text="get text from database"
+        android:text=""
         android:textSize="20dp"
         android:id="@+id/cdststv"
         />
-
-
     <Button
+        android:id="@+id/cdupbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -195,8 +188,5 @@
         android:text="Update"
         android:textColor="@color/black"
         android:textSize="20dp"
-        android:id="@+id/cdupbtn"
         />
-
-
 </RelativeLayout>

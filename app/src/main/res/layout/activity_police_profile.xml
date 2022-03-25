@@ -185,7 +185,7 @@
                     android:background="@color/grey" />
 
                 <Button
-                    android:id="@+id/update"
+                    android:id="@+id/ppupdatebtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"

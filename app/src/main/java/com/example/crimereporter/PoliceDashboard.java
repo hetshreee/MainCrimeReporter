@@ -8,50 +8,58 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class PoliceDashboard extends AppCompatActivity {
-    ImageView viewcomplpolicemenu,editprofilepolicemenu,viewsospolicemenu,criminalpolicemenu,logoutpolicemenu;
+    ImageView ivpdbar,ivpdcom,ivpdcon,ivpdinv,ivpdsos,ivpdtask;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_police_dashboard);
 
-        viewcomplpolicemenu = findViewById(R.id.policemenuviewcompl);
-        editprofilepolicemenu = findViewById(R.id.policemenueditprofile);
-        viewsospolicemenu = findViewById(R.id.policemenuviewsos);
-        criminalpolicemenu = findViewById(R.id.policemenucriminal);
-        logoutpolicemenu=findViewById(R.id.policemenulogout);
+        ivpdbar = findViewById(R.id.pdbariv);
+        ivpdcom = findViewById(R.id.pdcomiv);
+        ivpdcon = findViewById(R.id.pdconiv);
+        ivpdinv = findViewById(R.id.pdinviv);
+        ivpdsos=findViewById(R.id.pdsosiv);
+        ivpdtask=findViewById(R.id.pdtaskiv);
 
-        viewcomplpolicemenu.setOnClickListener(new View.OnClickListener() {
+        ivpdbar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*Intent i = new Intent(getApplicationContext(),PoliceViewComplaint.class);
-                startActivity(i);*/
-            }
-        });
-        criminalpolicemenu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                /*Intent i = new Intent(getApplicationContext(),PoliceViewCriminalData.class);
-                startActivity(i);*/
-            }
-        });
-        editprofilepolicemenu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), PoliceEditProfile.class);
+                Intent i = new Intent(getApplicationContext(),PoliceCriminalStat.class);
                 startActivity(i);
             }
         });
-        viewsospolicemenu.setOnClickListener(new View.OnClickListener() {
+        ivpdcom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*Intent i = new Intent(getApplicationContext(), PoliceViewSOS.class);
-                startActivity(i);*/
+                Intent i = new Intent(getApplicationContext(),PoliceCaseDet.class);
+                startActivity(i);
             }
         });
-        logoutpolicemenu.setOnClickListener(new View.OnClickListener() {
+        ivpdcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), PoliceLogin.class);
+                Intent i = new Intent(getApplicationContext(), PoliceContactInfo.class);
+                startActivity(i);
+            }
+        });
+        ivpdinv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), PoliceCases.class);
+                startActivity(i);
+            }
+        });
+        /*ivpdsos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), .class);
+                startActivity(i);
+            }
+        });*/
+        ivpdtask.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), PoliceUpcomingAct.class);
                 startActivity(i);
             }
         });
