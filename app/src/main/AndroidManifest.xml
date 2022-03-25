@@ -20,10 +20,37 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CrimeReporter">
         <activity
+            android:name=".PoliceCriminalStat"
+            android:exported="false" />
+        <activity
+            android:name=".PoliceUpdateCaseDet"
+            android:exported="false" />
+        <activity
+            android:name=".PoliceCaseDet"
+            android:exported="false" />
+        <activity
+            android:name=".PoliceCases"
+            android:exported="false" />
+        <activity
+            android:name=".PoliceUpcomingAct"
+            android:exported="false" />
+        <activity
+            android:name=".PoliceContactInfo"
+            android:exported="false" />
+        <activity
+            android:name=".PoliceUpdateProfile"
+            android:exported="false" />
+        <activity
+            android:name=".PoliceProfile"
+            android:exported="false" />
+        <activity
+            android:name=".PoliceMenu"
+            android:exported="false" />
+        <activity
             android:name=".Login_Signup"
             android:exported="false"
             android:parentActivityName=".ChooseUser"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
             android:name=".UserCurrentAddress"
             android:exported="false" />
@@ -31,7 +58,7 @@
             android:name=".PoliceEditProfile"
             android:exported="false" />
         <activity
-            android:name=".PoliceMenu"
+            android:name=".PoliceDashboard"
             android:exported="false" />
         <activity
             android:name=".PoliceRegister"
@@ -59,7 +86,7 @@
         <activity
             android:name=".ChooseUser"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
             android:name=".SplashScreen"
             android:exported="true"

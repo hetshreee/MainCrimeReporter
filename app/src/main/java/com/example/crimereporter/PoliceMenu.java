@@ -5,53 +5,49 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
+import android.widget.Button;
 
 public class PoliceMenu extends AppCompatActivity {
-    ImageView viewcomplpolicemenu,editprofilepolicemenu,viewsospolicemenu,criminalpolicemenu,logoutpolicemenu;
+
+    Button profilepm,citpm,upactpm,logoutpm;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_police_menu);
+        profilepm=findViewById(R.id.pmprofile);
+        citpm=findViewById(R.id.pmcit);
+        upactpm=findViewById(R.id.pmupact);
+        logoutpm=findViewById(R.id.pmlogout);
 
-        viewcomplpolicemenu = findViewById(R.id.policemenuviewcompl);
-        editprofilepolicemenu = findViewById(R.id.policemenueditprofile);
-        viewsospolicemenu = findViewById(R.id.policemenuviewsos);
-        criminalpolicemenu = findViewById(R.id.policemenucriminal);
-        logoutpolicemenu=findViewById(R.id.policemenulogout);
-
-        viewcomplpolicemenu.setOnClickListener(new View.OnClickListener() {
+        profilepm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*Intent i = new Intent(getApplicationContext(),PoliceViewComplaint.class);
-                startActivity(i);*/
-            }
-        });
-        criminalpolicemenu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                /*Intent i = new Intent(getApplicationContext(),PoliceViewCriminalData.class);
-                startActivity(i);*/
-            }
-        });
-        editprofilepolicemenu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), PoliceEditProfile.class);
+                Intent i = new Intent(getApplicationContext(), PoliceProfile.class);
                 startActivity(i);
             }
         });
-        viewsospolicemenu.setOnClickListener(new View.OnClickListener() {
+
+        citpm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*Intent i = new Intent(getApplicationContext(), PoliceViewSOS.class);
-                startActivity(i);*/
+                Intent i = new Intent(getApplicationContext(), PoliceContactInfo.class);
+                startActivity(i);
             }
         });
-        logoutpolicemenu.setOnClickListener(new View.OnClickListener() {
+
+        upactpm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), PoliceLogin.class);
+                Intent i = new Intent(getApplicationContext(), PoliceUpcomingAct.class);
+                startActivity(i);
+            }
+        });
+
+        logoutpm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), ChooseUser.class);
                 startActivity(i);
             }
         });

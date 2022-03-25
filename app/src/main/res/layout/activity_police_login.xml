@@ -1,69 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PoliceLogin"
-    android:orientation="vertical">
+    >
 
-    <ImageView
-        android:layout_width="130dp"
-        android:layout_height="120dp"
-        android:src="@drawable/policemanimg"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
-        android:id="@+id/policeimg"
+        android:layout_marginTop="165dp"
+        android:text="Sign In"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:id="@+id/ploginsignin"
         />
 
     <EditText
+        android:id="@+id/ploginusername"
         android:layout_width="300dp"
-        android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/policeimg"
-        android:layout_marginTop="25dp"
-        android:id="@+id/policeloginemail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ploginsignin"
+        android:text=""
         android:hint="Enter Email"
         />
 
     <EditText
+        android:id="@+id/ploginpassword"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/policeloginemail"
-        android:layout_marginTop="25dp"
-        android:id="@+id/policeloginpassword"
-        android:hint="Enter Password"
+        android:inputType="textPassword"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ploginusername"
+        android:text=""
+        android:hint="Enter Password"
         />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Sign In"
-        android:layout_below="@id/policeloginpassword"
-        android:layout_marginTop="25dp"
         android:layout_centerHorizontal="true"
-        android:id="@+id/policeloginsignin"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/ploginpassword"
+        android:text="SUBMIT"
+        android:id="@+id/ploginsigninbtn"
         />
 
     <TextView
-        android:id="@+id/policeloginsignup"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Sign UP"
-        android:layout_below="@id/policeloginsignin"
+        android:layout_below="@id/ploginsigninbtn"
+        android:id="@+id/ploginforgotpass"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        />
-
-    <TextView
-        android:id="@+id/policeloginforgotpass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:text="Forgot Password?"
-        android:layout_below="@id/policeloginsignup"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ploginforgotpass"
+        android:id="@+id/ploginsignup"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Sign up"
+        android:textAlignment="center"
         />
 
 </RelativeLayout>

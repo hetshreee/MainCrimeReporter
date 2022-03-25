@@ -30,6 +30,7 @@ public class UserCurrentAddress extends AppCompatActivity {
     EditText latitudecurrentadd, longitudecurrentadd;
     Button getLocation;
     TextView addresscurrentadd;
+    public String address1;
 
     public LocationManager locationManager;
     public LocationListener locationListener = new MyLocationListener();
@@ -39,6 +40,7 @@ public class UserCurrentAddress extends AppCompatActivity {
     //To generate address
     Geocoder geocoder;
     List<Address> myaddress;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,8 +75,9 @@ public class UserCurrentAddress extends AppCompatActivity {
                 }catch(IOException ex){
                     ex.printStackTrace();
                 }
-                String address1 = myaddress.get(0).getAddressLine(0);
+                address1 = myaddress.get(0).getAddressLine(0);
                 addresscurrentadd.setText(address1);
+
             }
         }
 

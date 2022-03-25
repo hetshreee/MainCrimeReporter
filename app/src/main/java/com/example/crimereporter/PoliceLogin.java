@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class PoliceLogin extends AppCompatActivity {
 
-    Button signinpolicelogin;
+    Button signinplogin;
     TextView signuppolicelogin,forgotpasspolicelogin;
 
     @Override
@@ -18,9 +18,9 @@ public class PoliceLogin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_police_login);
 
-        signinpolicelogin = findViewById(R.id.policeloginsignin);
-        signuppolicelogin = findViewById(R.id.policeloginsignup);
-        forgotpasspolicelogin = findViewById(R.id.policeloginforgotpass);
+        signinplogin = findViewById(R.id.ploginsigninbtn);
+        signuppolicelogin = findViewById(R.id.ploginsignup);
+        forgotpasspolicelogin = findViewById(R.id.ploginforgotpass);
 
         signuppolicelogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,10 +29,10 @@ public class PoliceLogin extends AppCompatActivity {
                 startActivity(i);
             }
         });
-        signinpolicelogin.setOnClickListener(new View.OnClickListener() {
+        signinplogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(),PoliceMenu.class);
+                Intent i = new Intent(getApplicationContext(), PoliceDashboard.class);
                 startActivity(i);
             }
         });

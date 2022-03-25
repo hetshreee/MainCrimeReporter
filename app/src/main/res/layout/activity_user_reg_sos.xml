@@ -28,10 +28,19 @@
         android:id="@+id/userregsoslocation"
         />
 
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/userregsosdisplayloc"
+        android:layout_below="@id/userregsoslocation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        />
+
     <Button
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/userregsoslocation"
+        android:layout_below="@id/userregsosdisplayloc"
         android:layout_centerHorizontal="true"
         android:text="Submit"
         android:layout_marginTop="25dp"
