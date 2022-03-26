@@ -23,7 +23,7 @@
             android:name=".PoliceOverview"
             android:exported="false" />
         <activity
-            android:name=".Police_SOS"
+            android:name=".PoliceSOS"
             android:exported="false" />
         <activity
             android:name=".PoliceCriminalStat"

@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class PoliceDashboard extends AppCompatActivity {
-    ImageView ivpdbar,ivpdcom,ivpdcon,ivpdinv,ivpdsos,ivpdtask;
+    ImageView ivpdbar,ivpdcom,ivpdcon,ivpdinv,ivpdsos,ivpdtask,ivpdupsos,ivpdprof;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +20,8 @@ public class PoliceDashboard extends AppCompatActivity {
         ivpdinv = findViewById(R.id.pdinviv);
         ivpdsos=findViewById(R.id.pdsosiv);
         ivpdtask=findViewById(R.id.pdtaskiv);
+        ivpdupsos=findViewById(R.id.pdupsosiv);
+        ivpdprof=findViewById(R.id.pdprofiv);
 
         ivpdbar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,17 +51,31 @@ public class PoliceDashboard extends AppCompatActivity {
                 startActivity(i);
             }
         });
-        /*ivpdsos.setOnClickListener(new View.OnClickListener() {
+        ivpdsos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), .class);
+                Intent i = new Intent(getApplicationContext(), PoliceSOS.class);
                 startActivity(i);
             }
-        });*/
+        });
         ivpdtask.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), PoliceUpcomingAct.class);
+                Intent i = new Intent(getApplicationContext(), PoliceOverview.class);
+                startActivity(i);
+            }
+        });
+        ivpdupsos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                /*Intent i = new Intent(getApplicationContext(), PoliceUp.class);
+                startActivity(i);*/
+            }
+        });
+        ivpdprof.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), PoliceProfile.class);
                 startActivity(i);
             }
         });

@@ -10,16 +10,18 @@
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_edit_profile.xml" value="0.15537059056678557" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_guide_book.xml" value="0.1675929884566054" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_login_police.xml" value="0.20416666666666666" />
+        <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_login_signup.xml" value="0.1675929884566054" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_overview.xml" value="0.1675929884566054" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_police_case_det.xml" value="0.25" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_police_cases.xml" value="0.1675929884566054" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_police_contact_info.xml" value="0.1675929884566054" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_police_criminal_stat.xml" value="0.1675929884566054" />
-        <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_police_dashboard.xml" value="0.20416666666666666" />
+        <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_police_dashboard.xml" value="0.14" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_police_edit_profile.xml" value="0.25" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_police_login.xml" value="0.1675929884566054" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_police_menu.xml" value="0.25" />
-        <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_police_overview.xml" value="0.15604959384352288" />
+        <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_police_overview.xml" value="0.33" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_police_profile.xml" value="0.22" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_police_register.xml" value="0.25" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_police_sign_up.xml" value="0.20416666666666666" />

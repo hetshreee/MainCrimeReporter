@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Police_SOS extends AppCompatActivity {
+public class PoliceSOS extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
