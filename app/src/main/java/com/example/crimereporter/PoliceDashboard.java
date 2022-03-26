@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class PoliceDashboard extends AppCompatActivity {
-    ImageView ivpdbar,ivpdcom,ivpdcon,ivpdinv,ivpdsos,ivpdtask,ivpdupsos,ivpdprof;
+    ImageView ivpdbar,ivpdcom,ivpdcon,ivpdinv,ivpdsos,ivpdtask,ivpdupsos,ivpdprof,menupd;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +22,7 @@ public class PoliceDashboard extends AppCompatActivity {
         ivpdtask=findViewById(R.id.pdtaskiv);
         ivpdupsos=findViewById(R.id.pdupsosiv);
         ivpdprof=findViewById(R.id.pdprofiv);
+        menupd=findViewById(R.id.pdmenu);
 
         ivpdbar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,6 +77,13 @@ public class PoliceDashboard extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), PoliceProfile.class);
+                startActivity(i);
+            }
+        });
+        ivpdprof.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), PoliceMenu.class);
                 startActivity(i);
             }
         });
