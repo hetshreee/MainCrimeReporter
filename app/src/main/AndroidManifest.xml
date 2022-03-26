@@ -20,6 +20,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CrimeReporter">
         <activity
+            android:name=".PoliceOverview"
+            android:exported="false" />
+        <activity
+            android:name=".Police_SOS"
+            android:exported="false" />
+        <activity
             android:name=".PoliceCriminalStat"
             android:exported="false" />
         <activity

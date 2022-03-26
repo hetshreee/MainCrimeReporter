@@ -8,13 +8,6 @@
     tools:context=".PoliceMenu"
     >
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/rightarrow"
-        android:layout_marginLeft="350dp"
-        android:background="@android:color/transparent"/>
-
     <TextView
         android:layout_width="150dp"
         android:layout_height="wrap_content"

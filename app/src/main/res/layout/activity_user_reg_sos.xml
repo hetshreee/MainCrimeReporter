@@ -16,10 +16,20 @@
         android:id="@+id/userregsostypeofemergency"
         />
 
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:hint="Phone Number"
+        android:id="@+id/userregsosphone"
+        android:layout_below="@+id/userregsostypeofemergency"
+        />
+
     <Button
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/userregsostypeofemergency"
+        android:layout_below="@id/userregsosphone"
         android:layout_centerHorizontal="true"
         android:text="Location"
         android:layout_marginTop="25dp"
