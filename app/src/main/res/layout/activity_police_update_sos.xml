@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".PoliceSOS">
     <LinearLayout
-        android:id="@+id/psosl1"
+        android:id="@+id/psosupl1"
         android:layout_width="match_parent"
         android:layout_height="220dp"
         android:background="#293859"
@@ -21,7 +21,7 @@
         android:textColor="@color/white"
         android:textSize="30dp"
         android:textStyle="bold"
-        android:id="@+id/psostv1"
+        android:id="@+id/psosuptv1"
         />
     <TextView
         android:layout_width="wrap_content"
@@ -32,15 +32,15 @@
         android:padding="10dp"
         android:textColor="@color/grey"
         android:layout_marginTop="60dp"
-        android:id="@+id/psostv2"
+        android:id="@+id/psosuptv2"
         />
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/psosl1"
+        android:layout_below="@+id/psosupl1"
         android:scrollbars="none">
         <LinearLayout
-            android:id="@+id/psosl2"
+            android:id="@+id/psosupl2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -49,28 +49,28 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:padding="10dp"
-                android:id="@+id/psosl3">
+                android:id="@+id/psosupl3">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:id="@+id/psosl4">
+                    android:id="@+id/psosupl4">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/psosl5">
+                        android:id="@+id/psosupl5">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Name"
-                            android:id="@+id/psosnametv"
+                            android:id="@+id/psosupnametv"
                             android:textSize="17dp"
                             android:textColor="@color/black"
                             />
                         <Space
                             android:layout_width="20dp"
                             android:layout_height="wrap_content"
-                            android:id="@+id/psosnamesp"
+                            android:id="@+id/psosupnamesp"
                             />
                         <EditText
                             android:layout_width="300dp"
@@ -78,7 +78,7 @@
                             android:layout_marginEnd="10dp"
                             android:text=""
                             android:hint="Name display"
-                            android:id="@+id/psosnameet"
+                            android:id="@+id/psosupnameet"
                             />
                     </LinearLayout>
                 </LinearLayout>
@@ -89,28 +89,28 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:padding="10dp"
-                android:id="@+id/psosl6">
+                android:id="@+id/psosupl6">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:id="@+id/psosl7">
+                    android:id="@+id/psosupl7">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/psosl8">
+                        android:id="@+id/psosupl8">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Phone"
                             android:textSize="17dp"
                             android:textColor="@color/black"
-                            android:id="@+id/psosphonetv"
+                            android:id="@+id/psosupphonetv"
                             />
                         <Space
                             android:layout_width="20dp"
                             android:layout_height="wrap_content"
-                            android:id="@+id/psosphonesp"
+                            android:id="@+id/psosupphonesp"
                             />
                         <EditText
                             android:layout_width="300dp"
@@ -118,7 +118,7 @@
                             android:layout_marginEnd="10dp"
                             android:text=""
                             android:hint="Phone Number"
-                            android:id="@+id/psosphoneet"
+                            android:id="@+id/psosupphoneet"
                             />
                     </LinearLayout>
                 </LinearLayout>
@@ -129,28 +129,28 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:padding="10dp"
-                android:id="@+id/psosl9">
+                android:id="@+id/psosupl9">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:id="@+id/psosl10">
+                    android:id="@+id/psosupl10">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/psosl11">
+                        android:id="@+id/psosupl11">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Location"
                             android:textSize="17dp"
                             android:textColor="@color/black"
-                            android:id="@+id/psosloctv"
+                            android:id="@+id/psosuploctv"
                             />
                         <Space
                             android:layout_width="20dp"
                             android:layout_height="wrap_content"
-                            android:id="@+id/psoslocsp"
+                            android:id="@+id/psosuplocsp"
                             />
                         <EditText
                             android:layout_width="300dp"
@@ -158,7 +158,7 @@
                             android:layout_marginEnd="10dp"
                             android:text=""
                             android:hint="Location"
-                            android:id="@+id/psoslocet"
+                            android:id="@+id/psosuplocet"
                             />
                     </LinearLayout>
                 </LinearLayout>
@@ -169,46 +169,60 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:padding="10dp"
-                android:id="@+id/psosl15">
+                android:id="@+id/psosupl12">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:id="@+id/psosl16">
+                    android:id="@+id/psosupl13">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/psosl17">
+                        android:id="@+id/psosupl14">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SOS Status"
+                            android:textSize="17dp"
+                            android:textColor="@color/black"
+                            android:id="@+id/psosupststv"
+                            />
+                        <Space
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/psosupstssp"
+                            />
+                        <Spinner
+                            android:id="@+id/psosupstsspinner"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/psosstsspinner"
+                            android:spinnerMode="dropdown"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:id="@+id/psosupl15">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/psosupl16">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/psosupl17">
                         <Button
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="SUBMIT"
-                            android:id="@+id/psossub"
-                            />
-                    </LinearLayout>
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:padding="10dp"
-                android:id="@+id/psosl18">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:id="@+id/psosl19">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/psosl20">
-                        <Button
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="UPDATE STATUS"
-                            android:id="@+id/psosupbtn"
+                            android:id="@+id/psosupsub"
                             />
                     </LinearLayout>
                 </LinearLayout>
@@ -216,5 +230,4 @@
 
         </LinearLayout>
     </ScrollView>
-
 </RelativeLayout>
