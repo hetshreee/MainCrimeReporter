@@ -24,7 +24,7 @@ public class PoliceEditProfile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_police_edit_profile);
         initDatePicker();
-        dateButton = findViewById(R.id.usereditprofiledatepickerbutton);
+        dateButton = findViewById(R.id.usereditprofileage);
         Spinner spinneroptpoliceeditprofile =findViewById(R.id.policeeditprofilespinneropt);
         ArrayAdapter<CharSequence>adapter=ArrayAdapter.createFromResource(this, R.array.policenames, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);

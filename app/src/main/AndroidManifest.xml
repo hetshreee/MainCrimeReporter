@@ -20,9 +20,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CrimeReporter">
         <activity
-            android:name=".MenuPolice"
-            android:exported="false" />
-        <activity
             android:name=".UserViewProfile"
             android:exported="false" />
         <activity
