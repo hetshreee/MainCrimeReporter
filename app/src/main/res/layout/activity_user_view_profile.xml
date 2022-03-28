@@ -1,40 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="220dp"
-        android:background="#293859"
-        />
+        android:background="#293859" />
     <!--Top Header Layout-->
     <LinearLayout
         android:id="@+id/pptopbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        >
+        android:layout_height="wrap_content">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="90dp"
-            android:text="User Profile"
+            android:text="USER PROFILE"
+            android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            />
+            android:textSize="27dp" />
     </LinearLayout>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/pptopbar"
         android:scrollbars="none">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -49,25 +46,26 @@
                 android:gravity="center"
                 android:orientation="vertical"
                 android:padding="16dp">
+
                 <ImageView
                     android:layout_width="150dp"
-                    android:layout_height="90dp"
-                    android:src="@drawable/user"
-                    />
+                    android:layout_height="120dp"
+                    android:src="@drawable/user" />
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
+
                     <TextView
+                        android:id="@+id/ppdispname"
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:text=""
                         android:textColor="@color/black"
                         android:textSize="21dp"
-                        android:textStyle="bold"
-                        android:id="@+id/ppdispname"
-                        />
+                        android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -83,12 +81,13 @@
                 <LinearLayout
                     android:layout_width="1dp"
                     android:layout_height="match_parent"
-                    android:background="@color/grey"
-                    />
+                    android:background="@color/grey" />
+
                 <Button
                     android:id="@+id/upupdatebtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
                     android:layout_weight="2"
                     android:gravity="center"
                     android:padding="13dp"
@@ -96,9 +95,7 @@
                     android:textAllCaps="true"
                     android:textColor="@color/black"
                     android:textSize="15dp"
-                    android:textStyle="bold"
-                    android:layout_marginTop="20dp"
-                    />
+                    android:textStyle="bold" />
             </LinearLayout>
             <!--Bootom Cards with sections-->
             <LinearLayout
@@ -126,7 +123,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="First Name"
+                                android:hint="FIRST NAME"
                                 android:textSize="17dp"
                                 android:textStyle="bold" />
 
@@ -139,7 +136,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginEnd="10dp"
-                                android:text="Last Name"
+                                android:hint="LAST NAME"
                                 android:textSize="17dp"
                                 android:textStyle="bold" />
                         </LinearLayout>
@@ -162,7 +159,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Email"
+                            android:hint="ADDRESS"
                             android:textSize="17dp"
                             android:textStyle="bold" />
 
@@ -181,7 +178,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Phone"
+                                android:hint="MOBILE NUMBER"
                                 android:textSize="17dp"
                                 android:textStyle="bold" />
 
@@ -205,7 +202,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Aadhar No"
+                                android:hint="AADHAR NUMBER"
                                 android:textSize="17dp"
                                 android:textStyle="bold" />
 
@@ -227,7 +224,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginEnd="10dp"
-                                android:text="Batch No"
+                                android:hint="NATIONALITY"
                                 android:textSize="17dp"
                                 android:textStyle="bold" />
 
@@ -249,7 +246,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Address"
+                                android:hint="AGE"
                                 android:textSize="17dp"
                                 android:textStyle="bold" />
                         </LinearLayout>
@@ -264,7 +261,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Email"
+                                android:hint="AGE"
                                 android:textSize="17dp"
                                 android:textStyle="bold" />
                         </LinearLayout>
@@ -279,22 +276,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Password"
-                                android:textSize="17dp"
-                                android:textStyle="bold" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
-                            android:gravity="center_vertical"
-                            android:paddingRight="8dp">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Date of Birth"
+                                android:text="USERNAME"
                                 android:textSize="17dp"
                                 android:textStyle="bold" />
                         </LinearLayout>

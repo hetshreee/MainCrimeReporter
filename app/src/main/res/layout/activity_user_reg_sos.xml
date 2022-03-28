@@ -1,60 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".UserRegSOS">
 
+    <ImageView
+        android:id="@+id/useregsosicon"
+        android:layout_width="wrap_content"
+        android:layout_height="175dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/help" />
+
     <EditText
+        android:id="@+id/userregsostypeofemergency"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/useregsosicon"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:hint="Type of Emergency"
-        android:id="@+id/userregsostypeofemergency"
-        />
+        android:hint="Type of Emergency" />
 
     <EditText
+        android:id="@+id/userregsosphone"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/userregsostypeofemergency"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
-        android:hint="Phone Number"
-        android:id="@+id/userregsosphone"
-        android:layout_below="@+id/userregsostypeofemergency"
-        />
+        android:hint="Phone Number" />
 
     <Button
+        android:id="@+id/userregsoslocation"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/userregsosphone"
         android:layout_centerHorizontal="true"
-        android:text="Location"
         android:layout_marginTop="25dp"
         android:background="@color/white"
-        android:textColor="@color/black"
-        android:id="@+id/userregsoslocation"
-        />
+        android:text="GET MY LOCATION"
+        android:textColor="@color/black" />
 
     <TextView
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
         android:id="@+id/userregsosdisplayloc"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
         android:layout_below="@id/userregsoslocation"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
-        />
+        android:hint="Your Location"
+        android:textAlignment="center" />
 
     <Button
+        android:id="@+id/userregsossubmit"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/userregsosdisplayloc"
         android:layout_centerHorizontal="true"
-        android:text="Submit"
         android:layout_marginTop="25dp"
-        android:id="@+id/userregsossubmit"
-        />
+        android:text="Submit" />
 
 </RelativeLayout>
