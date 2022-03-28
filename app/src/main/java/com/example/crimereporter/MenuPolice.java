@@ -30,5 +30,6 @@ public class MenuPolice extends AppCompatActivity {
         toggle=new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.open,R.string.close);
         drawerLayout.addDrawerListener(toggle);
 
+
     }
 }
