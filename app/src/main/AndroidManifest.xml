@@ -118,7 +118,8 @@
             android:exported="false" />
         <activity
             android:name=".UserMenu"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
     </application>
 
 </manifest>
