@@ -1,219 +1,343 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".UserMenu"
-    android:layout_centerInParent="true"
-    >
+    android:background="#e4e4e4"
+    tools:context=".PoliceDashboard"
+    tools:ignore="HardcodedText">
 
-    <GridLayout
+    <View
+        android:id="@+id/umview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:rowCount="3"
-        android:columnCount="2"
-        android:layout_margin="20dp"
+        android:layout_height="65dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#293859"
+        />
+
+    <TextView
+        android:id="@+id/umdashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Dashboard"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp"
+        />
+    <ImageButton
+        android:id="@+id/ummenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/menu"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/umlin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="140dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/umview"
         >
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="0"
-            android:layout_column="0"
-            android:layout_gravity="fill"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
+            android:id="@+id/umcv1"
+            android:layout_width="145dp"
+            android:layout_height="155dp"
             android:layout_margin="8dp"
+            android:layout_marginEnd="16dp"
+            android:clickable="true"
+            android:elevation="12dp"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
             app:cardCornerRadius="8dp"
-            app:cardElevation="8dp"
             >
-            <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_gravity="center_vertical|center_horizontal">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
                 <ImageView
-                    android:layout_width="75dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/complaintphoto"
-                    android:id="@+id/usermenuregcompl"
+                    android:id="@+id/umbariv"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:src="@drawable/piechart"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintBottom_toTopOf="@+id/umbartv"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
                     />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Register Complaint"
-                android:textStyle="bold"
-                android:textAlignment="center"/>
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/umbartv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Statistics"
+                    android:textAllCaps="true"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/umbariv"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="0"
-            android:layout_column="1"
-            android:layout_gravity="fill"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
+            android:id="@+id/umcv2"
+            android:layout_width="145dp"
+            android:layout_height="155dp"
             android:layout_margin="8dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="8dp"
-            >
-            <LinearLayout
-                android:layout_width="75dp"
-                android:layout_height="83dp"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_gravity="center_vertical|center_horizontal">
+            android:layout_marginStart="16dp"
+            android:clickable="true"
+            android:elevation="12dp"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="8dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
                 <ImageView
-                    android:layout_width="75dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/sos"
-                    android:id="@+id/usermenuregsos"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Register SOS"
-                    android:textStyle="bold"
-                    android:textAlignment="center"/>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+                    android:id="@+id/umcomiv"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:src="@drawable/openbook"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintBottom_toTopOf="@+id/umcomtv"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
+                <TextView
+                    android:id="@+id/umcomtv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="REGISTER CASE"
+                    android:textAllCaps="true"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/umcomiv"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/umlin2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/umlin1">
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="1"
-            android:layout_column="0"
-            android:layout_gravity="fill"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
+            android:id="@+id/umcv3"
+            android:layout_width="145dp"
+            android:layout_height="155dp"
             android:layout_margin="8dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="8dp"
-            >
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_gravity="center_vertical|center_horizontal">
+            android:layout_marginEnd="16dp"
+            android:clickable="true"
+            android:elevation="12dp"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="8dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
                 <ImageView
-                    android:layout_width="75dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/bar"
-                    android:id="@+id/usermenucrimerate"
+                    android:id="@+id/umconiv"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/calling"
+                    app:layout_constraintBottom_toTopOf="@+id/umcontv"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
                     />
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:id="@+id/umcontv"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Crime Rate"
+                    android:gravity="center"
+                    android:text="contact"
+                    android:textAllCaps="true"
+                    android:textSize="15dp"
                     android:textStyle="bold"
-                    android:textAlignment="center"/>
-            </LinearLayout>
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/umconiv"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
-
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="1"
-            android:layout_column="1"
-            android:layout_gravity="fill"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
+            android:id="@+id/umcv4"
+            android:layout_width="145dp"
+            android:layout_height="155dp"
             android:layout_margin="8dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="8dp"
-            >
-            <LinearLayout
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_gravity="center_vertical|center_horizontal">
+            android:layout_marginStart="16dp"
+            android:clickable="true"
+            android:elevation="12dp"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="8dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
                 <ImageView
-                    android:layout_width="75dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/guidebook"
-                    android:id="@+id/usermenuguidebook"
-                    />
+                    android:id="@+id/umgbkiv"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:src="@drawable/userguide"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintBottom_toTopOf="@+id/umgbktv"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:id="@+id/umgbktv"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Guide Book"
+                    android:gravity="center"
+                    android:text="GUIDE BOOK"
+                    android:textAllCaps="true"
+                    android:textSize="15dp"
                     android:textStyle="bold"
-                    android:textAlignment="center"/>
-            </LinearLayout>
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/umgbkiv"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
-
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/umlin2"
+        android:id="@+id/umlin3">
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="2"
-            android:layout_column="0"
-            android:layout_gravity="fill"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
+            android:id="@+id/umcv5"
+            android:layout_width="145dp"
+            android:layout_height="155dp"
             android:layout_margin="8dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="8dp"
-            >
-            <LinearLayout
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_gravity="center_vertical|center_horizontal">
+            android:layout_marginEnd="16dp"
+            android:clickable="true"
+            android:elevation="12dp"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="8dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
                 <ImageView
-                    android:layout_width="75dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/resume"
-                    android:id="@+id/usermenueditprofile"
+                    android:id="@+id/umsosiv"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:src="@drawable/location"
+                    app:layout_constraintBottom_toTopOf="@+id/umsostv"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
                     />
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:id="@+id/umsostv"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Edit Profile"
+                    android:gravity="center"
+                    android:text="SOS EMERGENCY"
+                    android:textAllCaps="true"
+                    android:textSize="15dp"
                     android:textStyle="bold"
-                    android:textAlignment="center"/>
-            </LinearLayout>
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/umsosiv"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
-
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="2"
-            android:layout_column="1"
-            android:layout_gravity="fill"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
+            android:id="@+id/umcv8"
+            android:layout_width="145dp"
+            android:layout_height="155dp"
             android:layout_margin="8dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="8dp"
-            >
-            <LinearLayout
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_gravity="center_vertical|center_horizontal">
+            android:layout_marginStart="16dp"
+            android:clickable="true"
+            android:elevation="12dp"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="8dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
                 <ImageView
-                    android:layout_width="75dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/logout"
-                    android:id="@+id/usermenulogout"
+                    android:id="@+id/umprofiv"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:src="@drawable/profile"
+                    app:layout_constraintBottom_toTopOf="@+id/umproftv"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
                     />
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:id="@+id/umproftv"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Logout "
+                    android:gravity="center"
+                    android:text="VIEW PROFILE"
+                    android:textAllCaps="true"
+                    android:textSize="15dp"
                     android:textStyle="bold"
-                    android:textAlignment="center"/>
-            </LinearLayout>
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/umprofiv"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
-
-    </GridLayout>
-</RelativeLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

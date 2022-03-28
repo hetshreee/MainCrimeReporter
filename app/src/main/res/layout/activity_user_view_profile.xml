@@ -18,18 +18,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:gravity="center_vertical"
-        android:padding="8dp">
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            />
+        android:layout_centerHorizontal="true"
+        >
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="90dp"
-            android:text="Police Profile"
+            android:text="User Profile"
             android:textColor="@color/white"
             android:textSize="20dp"
             android:textStyle="bold"
@@ -57,7 +52,7 @@
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="90dp"
-                    android:src="@drawable/police"
+                    android:src="@drawable/user"
                     />
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -73,77 +68,6 @@
                         android:textStyle="bold"
                         android:id="@+id/ppdispname"
                         />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:paddingBottom="10dp">
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:gravity="center"
-                        android:padding="8dp">
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:padding="10dp"
-                            android:src="@drawable/investigation" />
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Ongoing Investigations"
-                                android:textSize="15dp"
-                                android:textStyle="bold" />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="2dp"
-                                android:text="15"
-                                android:textSize="15dp" />
-                        </LinearLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:gravity="center"
-                        android:padding="8dp">
-
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:padding="10dp"
-                            android:src="@drawable/sos" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="SOS"
-                                android:textSize="15dp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="2dp"
-                                android:text="02"
-                                android:textSize="15dp" />
-                        </LinearLayout>
-                    </LinearLayout>
-
                 </LinearLayout>
             </LinearLayout>
 
@@ -162,7 +86,7 @@
                     android:background="@color/grey"
                     />
                 <Button
-                    android:id="@+id/ppupdatebtn"
+                    android:id="@+id/upupdatebtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
@@ -173,6 +97,7 @@
                     android:textColor="@color/black"
                     android:textSize="15dp"
                     android:textStyle="bold"
+                    android:layout_marginTop="20dp"
                     />
             </LinearLayout>
             <!--Bootom Cards with sections-->
@@ -339,7 +264,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Username"
+                                android:text="Email"
                                 android:textSize="17dp"
                                 android:textStyle="bold" />
                         </LinearLayout>

@@ -13,12 +13,19 @@ import com.google.android.material.tabs.TabLayout;
 
 public class UserLogin extends AppCompatActivity {
 
-
+Button loginsigninuser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_login);
-
+        loginsigninuser=findViewById(R.id.userloginsignin);
+        loginsigninuser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), UserMenu.class);
+                startActivity(i);
+            }
+        });
     }
 }

@@ -20,6 +20,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CrimeReporter">
         <activity
+            android:name=".UserViewProfile"
+            android:exported="false" />
+        <activity
             android:name=".PoliceUpdateSOS"
             android:exported="false" />
         <activity
@@ -68,7 +71,8 @@
             android:exported="false" />
         <activity
             android:name=".PoliceDashboard"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
             android:name=".PoliceRegister"
             android:exported="false" />

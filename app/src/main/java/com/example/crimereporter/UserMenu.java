@@ -9,20 +9,21 @@ import android.widget.ImageView;
 
 public class UserMenu extends AppCompatActivity {
 
-    ImageView regcomplusermenu,editprofileusermenu,guidebookusermenu,regsosusermenu,logoutusermenu;
+    ImageView ivumcom,ivumprof,ivumgbk,ivumsos,ivumcon,ivumbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_menu);
 
-        regcomplusermenu = findViewById(R.id.usermenuregcompl);
-        editprofileusermenu = findViewById(R.id.usermenueditprofile);
-        guidebookusermenu = findViewById(R.id.usermenuguidebook);
-        regsosusermenu = findViewById(R.id.usermenuregsos);
-        logoutusermenu = findViewById(R.id.usermenulogout);
+        ivumcom = findViewById(R.id.umcomiv);
+        ivumprof = findViewById(R.id.umprofiv);
+        ivumgbk = findViewById(R.id.umgbkiv);
+        ivumsos = findViewById(R.id.umsosiv);
+        ivumcon = findViewById(R.id.umconiv);
+        ivumbar = findViewById(R.id.umbariv);
 
-        regcomplusermenu.setOnClickListener(new View.OnClickListener() {
+        ivumcom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), UserComplaint.class);
@@ -30,23 +31,15 @@ public class UserMenu extends AppCompatActivity {
             }
         });
 
-        logoutusermenu.setOnClickListener(new View.OnClickListener() {
+        ivumprof.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(),UserLogin.class);
+                Intent i = new Intent(getApplicationContext(),UserViewProfile.class);
                 startActivity(i);
             }
         });
 
-        editprofileusermenu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), UserEditProfile.class);
-                startActivity(i);
-            }
-        });
-
-        guidebookusermenu.setOnClickListener(new View.OnClickListener() {
+        ivumgbk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), UserGuideBook.class);
@@ -54,11 +47,26 @@ public class UserMenu extends AppCompatActivity {
             }
         });
 
-        regsosusermenu.setOnClickListener(new View.OnClickListener() {
+        ivumsos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), UserRegSOS.class);
                 startActivity(i);
+            }
+        });
+
+        ivumcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), PoliceContactInfo.class);
+                startActivity(i);
+            }
+        });
+        ivumbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                /*Intent i = new Intent(getApplicationContext(), PoliceContactInfo.class);
+                startActivity(i);*/
             }
         });
 

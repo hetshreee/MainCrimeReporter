@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class PoliceDashboard extends AppCompatActivity {
-    ImageView ivpdbar,ivpdcom,ivpdcon,ivpdinv,ivpdsos,ivpdtask,ivpdupsos,ivpdprof,menupd;
+    ImageView ivpdbar,ivpdcom,ivpdcon,ivpdinv,ivpdsos,ivpdtask,ivpdupsos,ivpdprof,menupd,ivpdupcase;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +23,7 @@ public class PoliceDashboard extends AppCompatActivity {
         ivpdupsos=findViewById(R.id.pdupsosiv);
         ivpdprof=findViewById(R.id.pdprofiv);
         menupd=findViewById(R.id.pdmenu);
+        ivpdupcase=findViewById(R.id.pdupcaseiv);
 
         ivpdbar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,10 +81,17 @@ public class PoliceDashboard extends AppCompatActivity {
                 startActivity(i);
             }
         });
-        ivpdprof.setOnClickListener(new View.OnClickListener() {
+        menupd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), PoliceMenu.class);
+                startActivity(i);
+            }
+        });
+        ivpdupcase.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), PoliceUpdateCaseDet.class);
                 startActivity(i);
             }
         });
