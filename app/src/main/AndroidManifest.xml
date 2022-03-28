@@ -20,6 +20,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CrimeReporter">
         <activity
+            android:name=".MenuPolice"
+            android:exported="false" />
+        <activity
             android:name=".UserViewProfile"
             android:exported="false" />
         <activity
@@ -119,7 +122,7 @@
         <activity
             android:name=".UserMenu"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
     </application>
 
 </manifest>
