@@ -20,6 +20,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CrimeReporter">
         <activity
+            android:name=".UserViewSOS"
+            android:exported="false" />
+        <activity
+            android:name=".UserAddEvidence"
+            android:exported="false" />
+        <activity
+            android:name=".UserViewComplaint"
+            android:exported="false" />
+        <activity
             android:name=".UserViewProfile"
             android:exported="false" />
         <activity

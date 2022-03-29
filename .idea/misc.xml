@@ -36,6 +36,8 @@
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_policelogin.xml" value="0.20416666666666666" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_register_sos.xml" value="0.1675929884566054" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_splash_screen.xml" value="0.20416666666666666" />
+        <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_user_add_evidence.xml" value="0.1675929884566054" />
+        <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_user_complaint.xml" value="0.1675929884566054" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_user_current_address.xml" value="0.1675929884566054" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_user_edit_profile.xml" value="0.1675929884566054" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_user_login.xml" value="0.20416666666666666" />
@@ -43,7 +45,9 @@
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_user_reg_sos.xml" value="0.1675929884566054" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_user_sign_up.xml" value="0.18" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_user_sos_location.xml" value="0.1675929884566054" />
+        <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_user_view_complaint.xml" value="0.1675929884566054" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_user_view_profile.xml" value="0.1675929884566054" />
+        <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_user_view_sos.xml" value="0.15604959384352288" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/app_bar_menu_police.xml" value="0.1675929884566054" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/content_menu_police.xml" value="0.1675929884566054" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/navheader.xml" value="0.1675929884566054" />

@@ -9,7 +9,7 @@ import android.widget.ImageView;
 
 public class UserMenu extends AppCompatActivity {
 
-    ImageView ivumcom,ivumprof,ivumgbk,ivumsos,ivumcon,ivumbar;
+    ImageView ivumcom,ivumprof,ivumgbk,ivumsos,ivumcon,ivumbar,ivumchckcom,ivumchcksos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,8 @@ public class UserMenu extends AppCompatActivity {
         ivumsos = findViewById(R.id.umsosiv);
         ivumcon = findViewById(R.id.umconiv);
         ivumbar = findViewById(R.id.umbariv);
+        ivumchckcom = findViewById(R.id.umchckcomiv);
+        ivumchcksos = findViewById(R.id.umchcksosiv);
 
         ivumcom.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,6 +69,20 @@ public class UserMenu extends AppCompatActivity {
             public void onClick(View view) {
                 /*Intent i = new Intent(getApplicationContext(), PoliceContactInfo.class);
                 startActivity(i);*/
+            }
+        });
+        ivumchckcom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), UserViewComplaint.class);
+                startActivity(i);
+            }
+        });
+        ivumchcksos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), UserViewSOS.class);
+                startActivity(i);
             }
         });
 

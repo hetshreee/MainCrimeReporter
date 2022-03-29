@@ -20,10 +20,10 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="USER PROFILE"
+            android:text="COMPLAINT DETAILS"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="27dp"
+            android:textSize="20dp"
             android:layout_marginTop="15dp"/>
     </LinearLayout>
 
@@ -51,7 +51,7 @@
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="120dp"
-                    android:src="@drawable/user" />
+                    android:src="@drawable/complainnew" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -82,29 +82,29 @@
                 <LinearLayout
                     android:layout_width="1dp"
                     android:layout_height="match_parent" />
-
-                <Button
-                    android:id="@+id/upupdatebtn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_weight="2"
-                    android:gravity="center"
-                    android:padding="13dp"
-                    android:text="Update"
-                    android:textAllCaps="true"
-                    android:textColor="@color/black"
-                    android:textSize="15dp"
-                    android:textStyle="bold" />
             </LinearLayout>
             <!--Bootom Cards with sections-->
             <LinearLayout
                 android:id="@+id/personalInfo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-
+                android:orientation="vertical"
+                android:layout_marginTop="35dp">
                 <!--About Me Card-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="USERNAME"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -123,19 +123,10 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:hint="FIRST NAME"
-                                android:textSize="17dp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="25dp"
-                                android:hint="LAST NAME"
+                                android:hint="COMPLAINT NUMBER"
                                 android:textSize="17dp"
                                 android:textStyle="bold" />
                         </LinearLayout>
-
                     </LinearLayout>
 
                 </LinearLayout>
@@ -154,7 +145,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:hint="ADDRESS"
+                            android:hint="COMPLAINT NAME"
                             android:textSize="17dp"
                             android:textStyle="bold" />
 
@@ -173,7 +164,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:hint="MOBILE NUMBER"
+                                android:hint="DESCRIPTION"
                                 android:textSize="17dp"
                                 android:textStyle="bold" />
 
@@ -197,7 +188,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:hint="AADHAR NUMBER"
+                                android:hint="STATUS"
                                 android:textSize="17dp"
                                 android:textStyle="bold" />
 
@@ -219,46 +210,10 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginEnd="10dp"
-                                android:hint="NATIONALITY"
+                                android:hint="INVESTIGATION BY"
                                 android:textSize="17dp"
                                 android:textStyle="bold" />
 
-                        </LinearLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical"
-                            android:paddingRight="8dp">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:hint="AGE"
-                                android:textSize="17dp"
-                                android:textStyle="bold" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
-                            android:gravity="center_vertical"
-                            android:paddingRight="8dp">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:hint="USERNAME"
-                                android:textSize="17dp"
-                                android:textStyle="bold" />
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
