@@ -1,5 +1,6 @@
 package com.example.crimereporter;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -42,8 +43,14 @@ public class LoginTabFragment extends Fragment {
         loginbtn.setTranslationX(800);
         loginbtn.setAlpha(v);
         loginbtn.animate().translationX(0).alpha(1).setDuration(800).setStartDelay(700).start();
-
-
+        
+        loginbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getContext(), UserMenu.class);
+                startActivity(i);
+            }
+        });
         return root;
     }
 }

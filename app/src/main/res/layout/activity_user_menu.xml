@@ -458,7 +458,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="CHECK SOS"
+                    android:text="CHECK SOS STATUS"
                     android:textAllCaps="true"
                     android:textSize="15dp"
                     android:textStyle="bold"
