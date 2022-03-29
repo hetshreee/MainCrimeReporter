@@ -6,13 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".UserRegSOS">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="#293859" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SOS UPDATE"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="27dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/uvsos1"/>
+
     <ImageView
         android:id="@+id/useregsosicon"
         android:layout_width="wrap_content"
-        android:layout_height="175dp"
+        android:layout_height="125dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:src="@drawable/help" />
+        android:src="@drawable/help"
+        android:layout_below="@+id/uvsos1"/>
 
     <EditText
         android:id="@+id/userregsostypeofemergency"
