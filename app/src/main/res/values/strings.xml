@@ -55,4 +55,10 @@
     <string name="hyperlink6">AUD<a href="https://nrhm.maharashtra.gov.in/nrhm14feb.pdf"/>IT</string>
     <string name="hyperlink7">REPUBLIC DAY <a href="https://www.livemint.com/news/india/republic-day-2022-army-contingents-tableaus-parade-time-all-you-need-to-know-11642933223135.html"/>DRILL</string>
 
+    <string name="hyperlink8">PRIME MINISTER VISIT <a href="https://www.mha.gov.in/media/mha-press-releases"/>PREPARATIONS</string>
+    <string name="hyperlink9">STUDENT <a href="https://timesofindia.indiatimes.com/city/coimbatore/students-enjoy-visit-to-police-station/articleshow/20400844.cms"/>VISIT</string>
+    <string name="hyperlink10">MEETING AT <a href="https://owllabs.com/products/meeting-hq"/>HQ</string>
+    <string name="hyperlink11">DIGITALIZING <a href="https://www.journals.elsevier.com/digital-investigation"/>INVESTIGATION</string>
+    <string name="hyperlink12">NEW YEAR <a href="https://timesofindia.indiatimes.com/city/chennai/chennai-cops-to-install-led-lit-barricades-for-new-years-eve/articleshow/73039095.cms"/>BARRICADE</string>
+
 </resources>
