@@ -16,12 +16,12 @@
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_menu_police.xml" value="0.1675929884566054" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_overview.xml" value="0.1675929884566054" />
-        <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_police_case_det.xml" value="0.25" />
+        <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_police_case_det.xml" value="0.16" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_police_cases.xml" value="0.1675929884566054" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_police_contact_info.xml" value="0.1675929884566054" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_police_criminal_stat.xml" value="0.1675929884566054" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_police_dashboard.xml" value="0.1573321932449765" />
-        <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_police_edit_profile.xml" value="0.25" />
+        <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_police_edit_profile.xml" value="0.2" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_police_login.xml" value="0.18" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_police_menu.xml" value="0.25" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/activity_police_overview.xml" value="0.22" />
@@ -51,7 +51,7 @@
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/app_bar_menu_police.xml" value="0.1675929884566054" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/content_menu_police.xml" value="0.1675929884566054" />
         <entry key="..\:/CrimeReporter/app/src/main/res/layout/navheader.xml" value="0.1675929884566054" />
-        <entry key="..\:/CrimeReporter/app/src/main/res/layout/signup_fragment.xml" value="0.25" />
+        <entry key="..\:/CrimeReporter/app/src/main/res/layout/signup_fragment.xml" value="0.16" />
         <entry key="..\:/CrimeReporter/app/src/main/res/menu/mpiconmenu.xml" value="0.1675929884566054" />
       </map>
     </option>

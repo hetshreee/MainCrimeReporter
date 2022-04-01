@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="25dp"
     tools:context=".PoliceCaseDet">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Case Details"
         android:layout_centerHorizontal="true"
-        android:textSize="26dp"
+        android:text="Case Details"
         android:textColor="@color/black"
-        />
+        android:textSize="26dp" />
+
     <EditText
+        android:id="@+id/pcdcasenoet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Case Number"
-        android:textColor="@color/black"
-        android:textSize="23dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        android:id="@+id/pcdcasenoet"
-        />
+        android:hint="Case Number"
+        android:textColor="@color/black"
+        android:textSize="23dp" />
 
     <TextView
         android:id="@+id/cdvicname"
@@ -33,41 +33,33 @@
         android:layout_marginTop="90dp"
         android:text="Victim Name:"
         android:textColor="@color/black"
-        android:textSize="20dp"
-        />
-    <Space
-        android:id="@+id/cdvicnamesp"
-        android:layout_width="20dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:layout_toRightOf="@+id/cdvicname"
-        android:layout_marginTop="90dp"/>
+        android:textSize="20dp" />
+
     <TextView
+        android:id="@+id/cdvicnametv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/cdvicnamesp"
         android:layout_marginTop="90dp"
-        android:textSize="20dp"
-        android:id="@+id/cdvicnametv"
-        />
+        android:layout_toRightOf="@+id/cdvicname"
+        android:textSize="20dp" />
+
     <TextView
+        android:id="@+id/cdcsloc"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Crime Scene Location"
-        android:layout_marginTop="130dp"
-        android:textSize="20dp"
-        android:textColor="@color/black"
         android:layout_marginLeft="20dp"
-        android:id="@+id/cdcsloc"
-        />
+        android:layout_marginTop="130dp"
+        android:text="Crime Scene Location"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
     <Space
         android:id="@+id/cdcslocsp"
         android:layout_width="20dp"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:layout_toRightOf="@+id/cdcsloc"
         android:layout_marginTop="130dp"
-        />
+        android:layout_toRightOf="@+id/cdcsloc"
+        android:layout_weight="1" />
 
     <TextView
         android:id="@+id/cdcsloctv"
@@ -79,33 +71,31 @@
         android:textSize="20dp" />
 
     <TextView
+        android:id="@+id/cde"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Evidence"
-        android:layout_marginTop="190dp"
-        android:textSize="20dp"
-        android:textColor="@color/black"
         android:layout_marginLeft="20dp"
-        android:id="@+id/cde"
-        />
+        android:layout_marginTop="190dp"
+        android:text="Evidence"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
     <Space
         android:id="@+id/cdesp"
         android:layout_width="20dp"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:layout_toRightOf="@+id/cde"
         android:layout_marginTop="190dp"
-        />
+        android:layout_toRightOf="@+id/cde"
+        android:layout_weight="1" />
 
     <TextView
+        android:id="@+id/cdetv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/cdesp"
         android:layout_marginTop="190dp"
+        android:layout_toRightOf="@+id/cdesp"
         android:text=""
-        android:textSize="20dp"
-        android:id="@+id/cdetv"
-        />
+        android:textSize="20dp" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/puccon1"
@@ -113,6 +103,7 @@
         android:layout_height="250dp"
         android:layout_below="@+id/cdetv"
         android:orientation="vertical">
+
         <ImageView
             android:layout_width="75dp"
             android:layout_height="75dp"
@@ -120,8 +111,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            />
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
@@ -132,52 +122,52 @@
         android:layout_marginTop="500dp"
         android:text="Reported by"
         android:textColor="@color/black"
-        android:textSize="20dp"
-        />
+        android:textSize="20dp" />
+
     <Space
         android:id="@+id/cdrepsp"
         android:layout_width="20dp"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:layout_toRightOf="@+id/cdrep"
         android:layout_marginTop="500dp"
-        />
+        android:layout_toRightOf="@+id/cdrep"
+        android:layout_weight="1" />
+
     <TextView
+        android:id="@+id/cdreptv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/cdrepsp"
         android:layout_marginTop="500dp"
+        android:layout_toRightOf="@+id/cdrepsp"
         android:text=""
-        android:textSize="20dp"
-        android:id="@+id/cdreptv"
-        />
+        android:textSize="20dp" />
+
     <TextView
+        android:id="@+id/cdsts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="540dp"
         android:text="Status"
         android:textColor="@color/black"
-        android:textSize="20dp"
-        android:layout_marginTop="540dp"
-        android:layout_marginLeft="20dp"
-        android:id="@+id/cdsts"
-        />
+        android:textSize="20dp" />
+
     <Space
         android:id="@+id/cdstssp"
         android:layout_width="20dp"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:layout_toRightOf="@+id/cdsts"
         android:layout_marginTop="540dp"
-        />
+        android:layout_toRightOf="@+id/cdsts"
+        android:layout_weight="1" />
+
     <TextView
+        android:id="@+id/cdststv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/cdstssp"
         android:layout_marginTop="540dp"
+        android:layout_toRightOf="@+id/cdstssp"
         android:text=""
-        android:textSize="20dp"
-        android:id="@+id/cdststv"
-        />
+        android:textSize="20dp" />
+
     <Button
         android:id="@+id/cdupbtn"
         android:layout_width="wrap_content"
@@ -187,6 +177,5 @@
         android:background="@color/grey"
         android:text="Update"
         android:textColor="@color/black"
-        android:textSize="20dp"
-        />
+        android:textSize="20dp" />
 </RelativeLayout>

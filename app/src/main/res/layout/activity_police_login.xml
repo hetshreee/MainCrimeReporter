@@ -6,11 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".PoliceLogin">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="#293859" />
+
+    <TextView
+        android:id="@+id/pl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="POLICE LOGIN"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="27dp" />
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="150dp"
         android:src="@drawable/police"
-        android:id="@+id/ploginicon"/>
+        android:id="@+id/ploginicon"
+        android:layout_marginTop="40dp"/>
 
 
     <EditText

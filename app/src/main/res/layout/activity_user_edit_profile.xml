@@ -6,6 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".UserEditProfile">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="#293859" />
+
+    <TextView
+        android:id="@+id/usep1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="EDIT PROFILE"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="27dp" />
+
     <ScrollView
         android:id="@+id/scrollviewlyout"
         android:layout_width="match_parent"
@@ -37,7 +52,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="135dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/profile" />
+                    android:src="@drawable/profile"
+                    android:layout_marginTop="35dp"/>
 
                 <Spinner
                     android:id="@+id/usereditprofilespinneropt"

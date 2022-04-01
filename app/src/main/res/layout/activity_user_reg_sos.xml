@@ -12,14 +12,14 @@
         android:background="#293859" />
 
     <TextView
+        android:id="@+id/uvsos1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:text="REGISTER SOS"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="27dp"
-        android:layout_marginTop="15dp"
-        android:id="@+id/uvsos1"/>
+        android:textSize="27dp" />
 
     <ImageView
         android:id="@+id/useregsosicon"
@@ -27,7 +27,7 @@
         android:layout_height="125dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:src="@drawable/help"
+        android:src="@drawable/sosicon"
         android:layout_below="@+id/uvsos1"/>
 
     <EditText

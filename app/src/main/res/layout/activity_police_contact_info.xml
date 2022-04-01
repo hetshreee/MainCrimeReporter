@@ -277,13 +277,6 @@
                         android:background="@android:color/transparent"
                         android:src="@drawable/facebook" />
 
-                    <Space
-                        android:id="@+id/spaces0"
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@+id/fb"
-                        android:layout_marginTop="30dp"/>
-
                     <ImageButton
                         android:id="@+id/twttr"
                         android:layout_width="50dp"
@@ -292,14 +285,6 @@
                         android:layout_toRightOf="@+id/spaces0"
                         android:background="@android:color/transparent"
                         android:src="@drawable/twitter"
-                        />
-
-                    <Space
-                        android:id="@+id/spaces10"
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:layout_toRightOf="@+id/twttr"
-                        android:layout_marginTop="30dp"
                         />
 
                     <ImageButton

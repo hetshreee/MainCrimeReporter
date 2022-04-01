@@ -46,22 +46,14 @@
         android:layout_marginTop="120dp"
         android:background="@color/grey"/>
 
-    <Space
-        android:id="@+id/spce"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:layout_toRightOf="@+id/display"
-        android:layout_marginTop="120dp" />
-
     <Button
-        android:layout_toRightOf="@+id/spce"
+        android:layout_toRightOf="@+id/display"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/grey"
         android:textColor="@color/white"
         android:text="Update"
-        android:layout_marginRight="20dp"
+        android:layout_marginLeft="125dp"
         android:layout_marginTop="120dp"/>
 
 </RelativeLayout>
