@@ -67,8 +67,8 @@ public class UserMenu extends AppCompatActivity {
         ivumbar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*Intent i = new Intent(getApplicationContext(), PoliceContactInfo.class);
-                startActivity(i);*/
+                Intent i = new Intent(getApplicationContext(), PoliceCriminalStat.class);
+                startActivity(i);
             }
         });
         ivumchckcom.setOnClickListener(new View.OnClickListener() {

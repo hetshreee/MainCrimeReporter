@@ -54,10 +54,25 @@
         <entry key="..\:/D Drive/hetu project/MainCrimeReporter/app/src/main/res/layout/activity_police_register.xml" value="0.25" />
         <entry key="..\:/D Drive/hetu project/MainCrimeReporter/app/src/main/res/layout/activity_user_login.xml" value="0.25" />
         <entry key="..\:/D Drive/hetu project/MainCrimeReporter/app/src/main/res/layout/signup_fragment.xml" value="0.25" />
+        <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_police_criminal_stat.xml" value="0.20416666666666666" />
         <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_police_dashboard.xml" value="0.18" />
         <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_police_overview.xml" value="0.20416666666666666" />
+        <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_police_profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_police_register.xml" value="0.20416666666666666" />
+        <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_police_sos.xml" value="0.20416666666666666" />
         <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_police_upcoming.xml" value="0.16944444444444445" />
+        <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_police_update_case_det.xml" value="0.20416666666666666" />
+        <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_police_update_profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_police_update_sos.xml" value="0.20416666666666666" />
+        <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_user_current_address.xml" value="0.20416666666666666" />
+        <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_user_edit_profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_user_guide_book.xml" value="0.20416666666666666" />
+        <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_user_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_user_menu.xml" value="0.20416666666666666" />
         <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_user_reg_sos.xml" value="0.20416666666666666" />
+        <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_user_view_complaint.xml" value="0.16944444444444445" />
+        <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_user_view_profile.xml" value="0.16944444444444445" />
+        <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_user_view_sos.xml" value="0.16944444444444445" />
       </map>
     </option>
   </component>

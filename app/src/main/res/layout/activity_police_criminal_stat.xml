@@ -5,55 +5,208 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PoliceCriminalStat">
+    tools:context=".PoliceOverview">
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="360dp"
-        android:src="@drawable/rightarrow"
-        android:layout_marginTop="10dp"
-        android:background="@android:color/transparent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#293859"
+        android:id="@+id/po1"
+        android:orientation="horizontal" />
 
     <TextView
+        android:id="@+id/upcom2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Crime Statistics"
-        android:textStyle="bold"
-        android:textSize="30dp"
-        android:layout_marginTop="5dp"
-        android:textColor="@color/black"
-        android:gravity="center"/>
+        android:layout_marginTop="10dp"
+        android:text="STATISTICS"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="27dp" />
 
-    <Spinner
-        android:id="@+id/stats1"
-        android:layout_width="300dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="70dp"
+    <ImageView
+        android:id="@+id/upcom3"
+        android:layout_width="wrap_content"
+        android:layout_height="125dp"
         android:layout_centerHorizontal="true"
-        android:spinnerMode="dropdown"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginTop="20dp"
+        android:src="@drawable/inferential"
+        android:layout_below="@+id/upcom2"/>
 
-    <Button
-        android:id="@+id/display"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Display"
-        android:textColor="@color/white"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="120dp"
-        android:background="@color/grey"/>
+        android:layout_below="@+id/po1">
 
-    <Button
-        android:layout_toRightOf="@+id/display"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/grey"
-        android:textColor="@color/white"
-        android:text="Update"
-        android:layout_marginLeft="125dp"
-        android:layout_marginTop="120dp"/>
+        <ScrollView
+            android:id="@+id/pcsscroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="340dp"
+                android:orientation="vertical"
+                android:paddingBottom="120dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pdview">
+
+                <TextView
+                    android:id="@+id/pcs2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/po1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/hyp1"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/pcs3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/hyp2"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/pcs4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/hyp3"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/pcs5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/hyp4"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/pcs6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/hyp5"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/pcs7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/hyp6"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/pcs8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/hyp7"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/pcs9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/hyp8"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/pcs10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/hyp9"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/pcs11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/hyp10"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/pcs12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/hyp11"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/pcs13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/hyp12"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/pcs14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/hyp13"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
 
 </RelativeLayout>
