@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "807423161103",
-    "project_id": "crime-reporter-344914",
-    "storage_bucket": "crime-reporter-344914.appspot.com"
+    "project_number": "226300868452",
+    "project_id": "crimereportmgmt",
+    "storage_bucket": "crimereportmgmt.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:807423161103:android:4cb2fdc02e19e77e72047a",
+        "mobilesdk_app_id": "1:226300868452:android:64b04e77da4918cff26c71",
         "android_client_info": {
           "package_name": "com.example.crimereporter"
         }
       },
       "oauth_client": [
         {
-          "client_id": "807423161103-9kkih2ev2pk6hdgkdbdgir02t8ubj507.apps.googleusercontent.com",
+          "client_id": "226300868452-bhg7bvqfs6dhqjh0qcs4tmpqnivvd1e2.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDyT6sY4Si5g_lOGffUkFEix_t7Wu_8xIk"
+          "current_key": "AIzaSyA8qQTUffISQkyJhaZHv8oLgvLrII6Gwuw"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "807423161103-9kkih2ev2pk6hdgkdbdgir02t8ubj507.apps.googleusercontent.com",
+              "client_id": "226300868452-bhg7bvqfs6dhqjh0qcs4tmpqnivvd1e2.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
