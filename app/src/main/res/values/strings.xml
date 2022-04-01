@@ -46,4 +46,13 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+
+    <string name="hyperlink1">FITNESS <a href="https://www.newindianexpress.com/cities/thiruvananthapuram/2014/oct/14/City-Police-to-Conduct-Fitness-Camp-for-Personnel-671486.html"/>CAMP</string>
+    <string name="hyperlink2">CYBER CRIME <a href="https://cytrain.ncrb.gov.in/staticpage/r0.php"/>AWARENESS</string>
+    <string name="hyperlink3">DEPARTMENT MEET <a href="https://help.offerup.com/hc/en-us/articles/360032335691-Find-a-Community-MeetUp-Spot"/>UP</string>
+    <string name="hyperlink4">CIVIL SERVICE <a href="https://www.upsc.gov.in/"/>EXAM</string>
+    <string name="hyperlink5">ELECTION <a href="https://pune.gov.in/service-category/election/"/>DUTY</string>
+    <string name="hyperlink6">AUD<a href="https://nrhm.maharashtra.gov.in/nrhm14feb.pdf"/>IT</string>
+    <string name="hyperlink7">REPUBLIC DAY <a href="https://www.livemint.com/news/india/republic-day-2022-army-contingents-tableaus-parade-time-all-you-need-to-know-11642933223135.html"/>DRILL</string>
+
 </resources>

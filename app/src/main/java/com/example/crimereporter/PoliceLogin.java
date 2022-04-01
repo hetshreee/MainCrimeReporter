@@ -59,7 +59,7 @@ public class PoliceLogin extends AppCompatActivity {
 
                                 if (getpassword.equals(passwordtxt)) {
                                     Toast.makeText(getApplicationContext(), "Logged In Successfully...!!", Toast.LENGTH_SHORT).show();
-                                    startActivity(new Intent(getApplicationContext(), UserMenu.class));
+                                    startActivity(new Intent(getApplicationContext(), PoliceDashboard.class));
 
                                 } else {
                                     Toast.makeText(getApplicationContext(), "Incorrect Password...!!", Toast.LENGTH_SHORT).show();

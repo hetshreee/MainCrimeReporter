@@ -393,7 +393,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/pdlin3">
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/pdcv9"
+                    android:id="@+id/pdcv7"
                     android:layout_width="145dp"
                     android:layout_height="155dp"
                     android:layout_margin="8dp"
@@ -495,7 +495,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/pdlin4">
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/pdcv7"
+                    android:id="@+id/pdcv9"
                     android:layout_width="145dp"
                     android:layout_height="155dp"
                     android:layout_margin="8dp"
@@ -536,6 +536,51 @@
                             app:layout_constraintHorizontal_bias="0.5"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/pdupcaseiv" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/pdcv10"
+                    android:layout_width="145dp"
+                    android:layout_height="155dp"
+                    android:layout_margin="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:clickable="true"
+                    android:elevation="12dp"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="8dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/pdupactiv"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/social"
+                            app:layout_constraintBottom_toTopOf="@+id/pdupacttv"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/pdupacttv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="UPCOMING ACTIVITY"
+                            android:textAllCaps="true"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/pdupactiv" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </androidx.cardview.widget.CardView>
 

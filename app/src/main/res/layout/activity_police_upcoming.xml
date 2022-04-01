@@ -1,25 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PoliceUpcomingAct">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="#293859"
+        android:id="@+id/upcom1"
+        android:orientation="horizontal" />
+
     <TextView
-        android:id="@+id/bar"
-        android:layout_width="wrap_content"
+        android:id="@+id/upcom2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="UPCOMING ACTIVITY"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="27dp" />
+
+    <ImageView
+        android:id="@+id/upcom3"
+        android:layout_width="wrap_content"
+        android:layout_height="125dp"
         android:layout_centerHorizontal="true"
-        android:text="UPCOMING ACTIVITIES"
-        android:textColor="@color/black"
-        android:textSize="30dp" />
+        android:layout_marginTop="30dp"
+        android:src="@drawable/upcom"
+        android:layout_below="@+id/upcom2"/>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/bar"
+        android:layout_below="@+id/upcom1"
         android:scrollbars="none">
 
         <LinearLayout
@@ -31,46 +47,23 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
                 android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-
-                    <Button
-                        android:layout_width="300dp"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:background="@android:color/transparent"
-                        android:drawableLeft="@drawable/bugles"
-                        android:text="Brass Band Concert"
-                        android:textColor="@color/black"
-                        android:textSize="20dp" />
-                </LinearLayout>
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <Button
+                    <TextView
                         android:layout_width="300dp"
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="20dp"
                         android:background="@android:color/transparent"
-                        android:drawableLeft="@drawable/running"
-                        android:text="Fitness Camp"
+                        android:text="@string/hyperlink1"
                         android:textColor="@color/black"
-                        android:textSize="20dp" />
+                        android:textSize="25sp"
+                        android:textAlignment="center"
+                        android:id="@+id/fitness1"/>
 
                 </LinearLayout>
 
@@ -85,16 +78,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <Button
+                    <TextView
                         android:layout_width="300dp"
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="20dp"
                         android:background="@android:color/transparent"
-                        android:drawableLeft="@drawable/technology"
-                        android:text="Cybercrime awareness"
+                        android:text="@string/hyperlink2"
                         android:textColor="@color/black"
-                        android:textSize="20dp" />
+                        android:textSize="25sp"
+                        android:textAlignment="center"
+                        android:id="@+id/cyber1"/>
 
                 </LinearLayout>
 
@@ -109,16 +103,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <Button
+                    <TextView
                         android:layout_width="300dp"
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="20dp"
                         android:background="@android:color/transparent"
-                        android:drawableLeft="@drawable/handshake"
-                        android:text="Department Meet up"
+                        android:text="@string/hyperlink3"
                         android:textColor="@color/black"
-                        android:textSize="20dp" />
+                        android:textSize="25sp"
+                        android:textAlignment="center"
+                        android:id="@+id/meet1"/>
 
                 </LinearLayout>
 
@@ -133,16 +128,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <Button
+                    <TextView
                         android:layout_width="300dp"
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="20dp"
                         android:background="@android:color/transparent"
-                        android:drawableLeft="@drawable/marking"
-                        android:text="Civil services exam"
+                        android:text="@string/hyperlink4"
                         android:textColor="@color/black"
-                        android:textSize="20dp" />
+                        android:textSize="25sp"
+                        android:textAlignment="center"
+                        android:id="@+id/exam1"/>
 
                 </LinearLayout>
 
@@ -157,16 +153,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <Button
+                    <TextView
                         android:layout_width="300dp"
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="20dp"
                         android:background="@android:color/transparent"
-                        android:drawableLeft="@drawable/elections"
-                        android:text="Election duty"
+                        android:id="@+id/duty1"
+                        android:text="@string/hyperlink5"
                         android:textColor="@color/black"
-                        android:textSize="20dp" />
+                        android:textSize="25sp"
+                        android:textAlignment="center" />
 
                 </LinearLayout>
 
@@ -181,16 +178,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <Button
+                    <TextView
                         android:layout_width="300dp"
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="20dp"
                         android:background="@android:color/transparent"
-                        android:drawableLeft="@drawable/search"
-                        android:text="Audit"
+                        android:text="@string/hyperlink6"
+                        android:id="@+id/audit1"
                         android:textColor="@color/black"
-                        android:textSize="20dp" />
+                        android:textSize="25sp"
+                        android:textAlignment="center"/>
 
                 </LinearLayout>
 
@@ -205,16 +203,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <Button
+                    <TextView
                         android:layout_width="300dp"
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="20dp"
                         android:background="@android:color/transparent"
-                        android:drawableLeft="@drawable/parade"
-                        android:text="Republic Day Drill"
+                        android:id="@+id/rep1"
+                        android:text="@string/hyperlink7"
                         android:textColor="@color/black"
-                        android:textSize="20dp" />
+                        android:textSize="25sp"
+                        android:textAlignment="center"/>
                 </LinearLayout>
             </LinearLayout>
 

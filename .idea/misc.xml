@@ -54,6 +54,9 @@
         <entry key="..\:/D Drive/hetu project/MainCrimeReporter/app/src/main/res/layout/activity_police_register.xml" value="0.25" />
         <entry key="..\:/D Drive/hetu project/MainCrimeReporter/app/src/main/res/layout/activity_user_login.xml" value="0.25" />
         <entry key="..\:/D Drive/hetu project/MainCrimeReporter/app/src/main/res/layout/signup_fragment.xml" value="0.25" />
+        <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_police_dashboard.xml" value="0.18" />
+        <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_police_upcoming.xml" value="0.16944444444444445" />
+        <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_user_reg_sos.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>
