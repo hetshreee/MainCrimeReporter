@@ -8,38 +8,37 @@
     android:background="@color/white"
     android:orientation="vertical">
     <LinearLayout
+        android:id="@+id/uepbg"
         android:layout_width="match_parent"
         android:layout_height="220dp"
         android:background="#293859"
-        />
-    <!--Top Header Layout-->
-    <LinearLayout
-        android:id="@+id/pptopbar"
+        android:orientation="horizontal" />
+
+    <ImageView
+        android:id="@+id/uep1"
+        android:layout_width="wrap_content"
+        android:layout_height="125dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/inferential" />
+
+    <TextView
+        android:id="@+id/usep1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:gravity="center_vertical"
-        android:padding="8dp">
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="90dp"
-            android:text="Police Profile"
-            android:textColor="@color/white"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            />
-    </LinearLayout>
+        android:layout_below="@id/uep1"
+        android:layout_marginTop="15dp"
+        android:text="PROFILE"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="27dp" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/pptopbar"
+        android:layout_below="@+id/uepbg"
         android:scrollbars="none">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -47,104 +46,24 @@
             android:paddingLeft="20dp"
             android:paddingTop="5dp"
             android:paddingRight="20dp">
-            <!--Top Profile Section -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="16dp">
-                <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="90dp"
-                    android:src="@drawable/police"
-                    />
+
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
+
                     <TextView
+                        android:id="@+id/ppdispname"
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:text=""
                         android:textColor="@color/black"
                         android:textSize="21dp"
-                        android:textStyle="bold"
-                        android:id="@+id/ppdispname"
-                        />
+                        android:textStyle="bold" />
                 </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:paddingBottom="10dp">
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:gravity="center"
-                        android:padding="8dp">
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:padding="10dp"
-                            android:src="@drawable/investigation" />
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Ongoing Investigations"
-                                android:textSize="15dp"
-                                android:textStyle="bold" />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="2dp"
-                                android:text="15"
-                                android:textSize="15dp" />
-                        </LinearLayout>
-                    </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:gravity="center"
-                        android:padding="8dp">
-
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:padding="10dp"
-                            android:src="@drawable/sos" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="SOS"
-                                android:textSize="15dp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="2dp"
-                                android:text="02"
-                                android:textSize="15dp" />
-                        </LinearLayout>
-                    </LinearLayout>
-
-                </LinearLayout>
             </LinearLayout>
 
             <!--Option Bar-->
@@ -152,15 +71,15 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
                 android:orientation="horizontal">
 
                 <LinearLayout
                     android:layout_width="1dp"
                     android:layout_height="match_parent"
-                    android:background="@color/grey"
-                    />
+                    android:background="@color/grey" />
+
                 <Button
                     android:id="@+id/ppupdatebtn"
                     android:layout_width="wrap_content"
@@ -172,8 +91,7 @@
                     android:textAllCaps="true"
                     android:textColor="@color/black"
                     android:textSize="15dp"
-                    android:textStyle="bold"
-                    />
+                    android:textStyle="bold" />
             </LinearLayout>
             <!--Bootom Cards with sections-->
             <LinearLayout
@@ -237,8 +155,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Email"
-                            android:textSize="17dp"
+                            android:text="Address"
+                            android:textSize="30dp"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -376,6 +294,6 @@
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-    </ScrollView>
+        </ScrollView>
+
 </RelativeLayout>

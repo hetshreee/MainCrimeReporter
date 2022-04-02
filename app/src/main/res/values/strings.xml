@@ -57,32 +57,32 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="hyperlink1">FITNESS <a href="https://www.newindianexpress.com/cities/thiruvananthapuram/2014/oct/14/City-Police-to-Conduct-Fitness-Camp-for-Personnel-671486.html"/>CAMP</string>
-    <string name="hyperlink2">CYBER CRIME <a href="https://cytrain.ncrb.gov.in/staticpage/r0.php"/>AWARENESS</string>
-    <string name="hyperlink3">DEPARTMENT MEET <a href="https://help.offerup.com/hc/en-us/articles/360032335691-Find-a-Community-MeetUp-Spot"/>UP</string>
-    <string name="hyperlink4">CIVIL SERVICE <a href="https://www.upsc.gov.in/"/>EXAM</string>
-    <string name="hyperlink5">ELECTION <a href="https://pune.gov.in/service-category/election/"/>DUTY</string>
-    <string name="hyperlink6">AUD<a href="https://nrhm.maharashtra.gov.in/nrhm14feb.pdf"/>IT</string>
-    <string name="hyperlink7">REPUBLIC DAY <a href="https://www.livemint.com/news/india/republic-day-2022-army-contingents-tableaus-parade-time-all-you-need-to-know-11642933223135.html"/>DRILL</string>
+    <string name="hyperlink1">FITNESS <a href="https://www.newindianexpress.com/cities/thiruvananthapuram/2014/oct/14/City-Police-to-Conduct-Fitness-Camp-for-Personnel-671486.html" />CAMP</string>
+    <string name="hyperlink2">CYBER CRIME <a href="https://cytrain.ncrb.gov.in/staticpage/r0.php" />AWARENESS</string>
+    <string name="hyperlink3">DEPARTMENT MEET <a href="https://help.offerup.com/hc/en-us/articles/360032335691-Find-a-Community-MeetUp-Spot" />UP</string>
+    <string name="hyperlink4">CIVIL SERVICE <a href="https://www.upsc.gov.in/" />EXAM</string>
+    <string name="hyperlink5">ELECTION <a href="https://pune.gov.in/service-category/election/" />DUTY</string>
+    <string name="hyperlink6">AUD<a href="https://nrhm.maharashtra.gov.in/nrhm14feb.pdf" />IT</string>
+    <string name="hyperlink7">REPUBLIC DAY <a href="https://www.livemint.com/news/india/republic-day-2022-army-contingents-tableaus-parade-time-all-you-need-to-know-11642933223135.html" />DRILL</string>
 
-    <string name="hyperlink8">PRIME MINISTER VISIT <a href="https://www.mha.gov.in/media/mha-press-releases"/>PREPARATIONS</string>
-    <string name="hyperlink9">STUDENT <a href="https://timesofindia.indiatimes.com/city/coimbatore/students-enjoy-visit-to-police-station/articleshow/20400844.cms"/>VISIT</string>
-    <string name="hyperlink10">MEETING AT <a href="https://owllabs.com/products/meeting-hq"/>HQ</string>
-    <string name="hyperlink11">DIGITALIZING <a href="https://www.journals.elsevier.com/digital-investigation"/>INVESTIGATION</string>
-    <string name="hyperlink12">NEW YEAR <a href="https://timesofindia.indiatimes.com/city/chennai/chennai-cops-to-install-led-lit-barricades-for-new-years-eve/articleshow/73039095.cms"/>BARRICADE</string>
+    <string name="hyperlink8">PRIME MINISTER VISIT <a href="https://www.mha.gov.in/media/mha-press-releases" />PREPARATIONS</string>
+    <string name="hyperlink9">STUDENT <a href="https://timesofindia.indiatimes.com/city/coimbatore/students-enjoy-visit-to-police-station/articleshow/20400844.cms" />VISIT</string>
+    <string name="hyperlink10">MEETING AT <a href="https://owllabs.com/products/meeting-hq" />HQ</string>
+    <string name="hyperlink11">DIGITALIZING <a href="https://www.journals.elsevier.com/digital-investigation" />INVESTIGATION</string>
+    <string name="hyperlink12">NEW YEAR <a href="https://timesofindia.indiatimes.com/city/chennai/chennai-cops-to-install-led-lit-barricades-for-new-years-eve/articleshow/73039095.cms" />BARRICADE</string>
 
-    <string name="hyp1">JANUARY 20<a href="https://docs.google.com/spreadsheets/d/1z6MY6e3a62uBYBw3nXwH-wOtu9JOQ4dN2fKx0DYrxZ8/edit?usp=sharing"/>21</string>
-    <string name="hyp2">FEBRUARY 20<a href="https://docs.google.com/spreadsheets/d/1IE-gxQXduwIQlDYCCxM9Dgzjl8kBUyQX2v-IkYhcq5A/edit?usp=sharing"/>21</string>
-    <string name="hyp3">MARCH 20<a href="https://docs.google.com/spreadsheets/d/1gOURoLlFH214NnoKlEJzu2qjueQ6Vd0WNNfzd3Br6JA/edit?usp=sharing"/>21</string>
-    <string name="hyp4">APRIL 20<a href="https://docs.google.com/spreadsheets/d/1f0tOHoOMM82VaZxkjS1DlhGUh8k8mdB0pWnZGBbiqGQ/edit?usp=sharing"/>21</string>
-    <string name="hyp5">MAY 20<a href="https://docs.google.com/spreadsheets/d/1ZsDNVyUigpWmLlw80GNB5xegE_pw_sWo7eFl3DA4EYo/edit?usp=sharing"/>21</string>
-    <string name="hyp6">JUNE 20<a href="https://docs.google.com/spreadsheets/d/1hCxEm3QjAmh9iZZsGZyiG2R1bYYuQ937JlHAHsz9U7A/edit?usp=sharing"/>21</string>
-    <string name="hyp7">JULY 20<a href="https://docs.google.com/spreadsheets/d/1nGeM7VpU8uNHbBdE4sBS0LfjFwWxuT6vlyI-st-MyC0/edit?usp=sharing"/>21</string>
-    <string name="hyp8">AUGUST 20<a href="https://docs.google.com/spreadsheets/d/1Gj3z_pHcjM1E6C3MXQg2THQgyakqLW21G77hm__D7gs/edit?usp=sharing"/>21</string>
-    <string name="hyp9">SEPTEMBER 20<a href="https://docs.google.com/spreadsheets/d/1I3si7jJP4Ahs7Ul-Yf4V7zgiNzVMSXZy6oCT_g6elI4/edit?usp=sharing"/>21</string>
-    <string name="hyp10">OCTOBER 20<a href="https://docs.google.com/spreadsheets/d/15wutIfK5lRR2fEQkDHqY1asPFzqKjCLl4_nDLhGxAbQ/edit?usp=sharing"/>21</string>
-    <string name="hyp11">NOVEMBER 20<a href="https://docs.google.com/spreadsheets/d/1jfEObEGWeDYaqnnEqch6CcTi5CMZlZiKVvRInJD0Xmo/edit?usp=sharing"/>21</string>
-    <string name="hyp12">DECEMBER 20<a href="https://docs.google.com/spreadsheets/d/10ugcS9WytUXDGIoM_8geSl-2aVmxqde_3jHaKlOBpqA/edit?usp=sharing"/>21</string>
-    <string name="hyp13">YEARLY <a href="https://docs.google.com/spreadsheets/d/10ugcS9WytUXDGIoM_8geSl-2aVmxqde_3jHaKlOBpqA/edit?usp=sharing"/>STATISTICS</string>
+    <string name="hyp1">JANUARY 20<a href="https://docs.google.com/spreadsheets/d/1z6MY6e3a62uBYBw3nXwH-wOtu9JOQ4dN2fKx0DYrxZ8/edit?usp=sharing" />21</string>
+    <string name="hyp2">FEBRUARY 20<a href="https://docs.google.com/spreadsheets/d/1IE-gxQXduwIQlDYCCxM9Dgzjl8kBUyQX2v-IkYhcq5A/edit?usp=sharing" />21</string>
+    <string name="hyp3">MARCH 20<a href="https://docs.google.com/spreadsheets/d/1gOURoLlFH214NnoKlEJzu2qjueQ6Vd0WNNfzd3Br6JA/edit?usp=sharing" />21</string>
+    <string name="hyp4">APRIL 20<a href="https://docs.google.com/spreadsheets/d/1f0tOHoOMM82VaZxkjS1DlhGUh8k8mdB0pWnZGBbiqGQ/edit?usp=sharing" />21</string>
+    <string name="hyp5">MAY 20<a href="https://docs.google.com/spreadsheets/d/1ZsDNVyUigpWmLlw80GNB5xegE_pw_sWo7eFl3DA4EYo/edit?usp=sharing" />21</string>
+    <string name="hyp6">JUNE 20<a href="https://docs.google.com/spreadsheets/d/1hCxEm3QjAmh9iZZsGZyiG2R1bYYuQ937JlHAHsz9U7A/edit?usp=sharing" />21</string>
+    <string name="hyp7">JULY 20<a href="https://docs.google.com/spreadsheets/d/1nGeM7VpU8uNHbBdE4sBS0LfjFwWxuT6vlyI-st-MyC0/edit?usp=sharing" />21</string>
+    <string name="hyp8">AUGUST 20<a href="https://docs.google.com/spreadsheets/d/1Gj3z_pHcjM1E6C3MXQg2THQgyakqLW21G77hm__D7gs/edit?usp=sharing" />21</string>
+    <string name="hyp9">SEPTEMBER 20<a href="https://docs.google.com/spreadsheets/d/1I3si7jJP4Ahs7Ul-Yf4V7zgiNzVMSXZy6oCT_g6elI4/edit?usp=sharing" />21</string>
+    <string name="hyp10">OCTOBER 20<a href="https://docs.google.com/spreadsheets/d/15wutIfK5lRR2fEQkDHqY1asPFzqKjCLl4_nDLhGxAbQ/edit?usp=sharing" />21</string>
+    <string name="hyp11">NOVEMBER 20<a href="https://docs.google.com/spreadsheets/d/1jfEObEGWeDYaqnnEqch6CcTi5CMZlZiKVvRInJD0Xmo/edit?usp=sharing" />21</string>
+    <string name="hyp12">DECEMBER 20<a href="https://docs.google.com/spreadsheets/d/10ugcS9WytUXDGIoM_8geSl-2aVmxqde_3jHaKlOBpqA/edit?usp=sharing" />21</string>
+    <string name="hyp13">YEARLY <a href="https://docs.google.com/spreadsheets/d/10ugcS9WytUXDGIoM_8geSl-2aVmxqde_3jHaKlOBpqA/edit?usp=sharing" />STATISTICS</string>
 
 </resources>
