@@ -78,8 +78,8 @@ public class PoliceDashboard extends AppCompatActivity {
         ivpdprof.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), PoliceProfile.class);
-                startActivity(i);
+                Intent i2 = new Intent(getApplicationContext(), PoliceViewProfile.class);
+                startActivity(i2);
             }
         });
         menupd.setOnClickListener(new View.OnClickListener() {

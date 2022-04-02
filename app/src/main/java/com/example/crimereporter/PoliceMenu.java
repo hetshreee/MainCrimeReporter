@@ -23,7 +23,7 @@ public class PoliceMenu extends AppCompatActivity {
         profilepm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), PoliceProfile.class);
+                Intent i = new Intent(getApplicationContext(), PoliceViewProfile.class);
                 startActivity(i);
             }
         });

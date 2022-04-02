@@ -36,7 +36,7 @@ public class UserMenu extends AppCompatActivity {
         ivumprof.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(),UserViewProfile.class);
+                Intent i = new Intent(getApplicationContext(),UserProfileView.class);
                 startActivity(i);
             }
         });

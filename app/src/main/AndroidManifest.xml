@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.crimereporter" >
+    package="com.example.crimereporter">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission
@@ -18,9 +18,9 @@
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CrimeReporter" >
+        android:theme="@style/Theme.CrimeReporter">
         <activity
-            android:name=".UserViewProfile"
+            android:name=".UserProfileView"
             android:exported="false" />
         <activity
             android:name=".UserViewSOS"
@@ -60,9 +60,6 @@
             android:exported="false" />
         <activity
             android:name=".PoliceUpdateProfile"
-            android:exported="false" />
-        <activity
-            android:name=".PoliceProfile"
             android:exported="false" />
         <activity
             android:name=".PoliceMenu"
@@ -112,7 +109,7 @@
         <activity
             android:name=".SplashScreen"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -129,6 +126,9 @@
             android:name=".UserMenu"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+
+        <activity android:name=".PoliceViewProfile"
+            android:exported="false"/>
     </application>
 
 </manifest>
