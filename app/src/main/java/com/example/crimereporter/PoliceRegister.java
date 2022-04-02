@@ -7,7 +7,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
+
 import java.util.Calendar;
+
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -22,6 +24,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class PoliceRegister extends AppCompatActivity {
 
+    long maxid = 0;
     DatabaseReference databaseReference3 = FirebaseDatabase.getInstance().getReferenceFromUrl("https://crimereportmgmt-default-rtdb.firebaseio.com/");
 
     @Override
@@ -40,6 +43,7 @@ public class PoliceRegister extends AppCompatActivity {
         final EditText repassword = findViewById(R.id.policesignuprepassword);
         final Button signupbtn = findViewById(R.id.policesignupsubmit);
 
+
         signupbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -53,6 +57,8 @@ public class PoliceRegister extends AppCompatActivity {
                 final String emailtxt = email.getText().toString();
                 final String passwordtxt = password.getText().toString();
                 final String repasswordtxt = repassword.getText().toString();
+
+
 
                 if (firstnametxt.isEmpty() || lastnametxt.isEmpty() || addresstxt.isEmpty() || mobilenotxt.isEmpty() || aadharnotxt.isEmpty() || agetxt.isEmpty() ||
                         emailtxt.isEmpty() || passwordtxt.isEmpty() || repasswordtxt.isEmpty()) {

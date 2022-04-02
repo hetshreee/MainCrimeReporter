@@ -40,6 +40,7 @@ public class PoliceLogin extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -48,8 +49,8 @@ public class PoliceLogin extends AppCompatActivity {
 
                 if (phnnotxt.isEmpty() || passwordtxt.isEmpty()) {
                     Toast.makeText(getApplicationContext(), "Please Enter the Details...!!", Toast.LENGTH_SHORT).show();
-                } else {
-
+                }
+                else {
                     databaseReference2.child("Police").addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot snapshot) {

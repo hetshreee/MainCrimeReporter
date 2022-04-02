@@ -18,6 +18,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class UserComplaint extends AppCompatActivity {
     Button ucaddevi,ucsub;
+    long maxid=0;
 
     DatabaseReference databaseReference4 = FirebaseDatabase.getInstance().getReferenceFromUrl("https://crimereportmgmt-default-rtdb.firebaseio.com/");
     @Override
@@ -29,6 +30,20 @@ public class UserComplaint extends AppCompatActivity {
         final EditText mobnouc = findViewById(R.id.ucmno);
         final EditText vicnameuc = findViewById(R.id.ucvicname);
         final EditText descuc = findViewById(R.id.ucdesc);
+
+        databaseReference4.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if (snapshot.exists())
+                {
+                    maxid = snapshot.getChildrenCount();
+                }
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
 
         ucsub.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,23 +57,22 @@ public class UserComplaint extends AppCompatActivity {
                     databaseReference4.child("Complaint").addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
-                            if(snapshot.hasChild("mobnoucc")){
+                            if(snapshot.hasChild(mobnoucc)){
                                 Toast.makeText(getApplicationContext(), "Mobile No. is already Registered...!!", Toast.LENGTH_SHORT).show();
-                            }else{
-                                databaseReference4.child("Complaint").child(mobnoucc).child("Victim Name").setValue(vicnameucc);
-                                databaseReference4.child("Complaint").child(mobnoucc).child("Description").setValue(descucc);
+                            }
+                            else
+                            {
+                                String Id = String.valueOf(maxid+1);
+                                databaseReference4.child("Complaint").child(Id).child("Mobile No").setValue(mobnoucc);
+                                databaseReference4.child("Complaint").child(Id).child("Victim Name").setValue(vicnameucc);
+                                databaseReference4.child("Complaint").child(Id).child("Description").setValue(descucc);
 
                                 Toast.makeText(getApplicationContext(), "Complaint Registered Successfully...!!", Toast.LENGTH_SHORT).show();
                                 startActivity(new Intent(getApplicationContext(), UserMenu.class));
-
-
                             }
                         }
-
                         @Override
-                        public void onCancelled(@NonNull DatabaseError error) {
-
-                        }
+                        public void onCancelled(@NonNull DatabaseError error) { }
                     });
                 }
             }
