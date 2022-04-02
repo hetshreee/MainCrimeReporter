@@ -1,160 +1,188 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".UserEditProfile">
+
+    <LinearLayout
+        android:id="@+id/uepbg"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="#293859"
+        android:orientation="horizontal" />
+
+    <ImageView
+        android:id="@+id/uep1"
+        android:layout_width="wrap_content"
+        android:layout_height="125dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/inferential" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/usep1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Edit Profile"
-        android:textSize="30dp"
-        android:layout_centerHorizontal="true"
-        android:textColor="@color/black"
-        android:id="@+id/policeeditprofiletv"
-        />
+        android:layout_below="@id/uep1"
+        android:layout_marginTop="15dp"
+        android:text="EDIT PROFILE"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="27dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/policeeditprofilelinear"
-        android:orientation="vertical"
-        android:layout_marginBottom="5sp"
-        android:layout_marginTop="25dp"
-        android:layout_below="@+id/policeeditprofiletv"
-        >
-        <Spinner
+        android:layout_below="@id/uepbg">
+
+        <ScrollView
+            android:id="@+id/scrollviewlyout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/policeeditprofilespinneropt"
-            android:spinnerMode="dropdown"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            />
+            app:layout_constraintTop_toBottomOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="340dp"
+                android:orientation="vertical"
+                android:paddingBottom="120dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pdview">
+
+                <LinearLayout
+                    android:id="@+id/usereditprofilelinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5sp"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/pepspin"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="15dp"
+                        android:spinnerMode="dropdown"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/pepfname"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/usereditprofilelinear"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10sp"
+                    android:hint="Enter First Name"
+                    android:text="" />
+
+                <EditText
+                    android:id="@+id/peplname"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pepfname"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10sp"
+                    android:hint="Enter Last Name"
+                    android:text="" />
+
+                <EditText
+                    android:id="@+id/pepadd"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/peplname"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10sp"
+                    android:hint="Enter Address"
+                    android:text="" />
+
+                <EditText
+                    android:id="@+id/pepmno"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pepadd"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10sp"
+                    android:hint="Enter Mobile No."
+                    android:text="" />
+
+                <EditText
+                    android:id="@+id/pepano"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pepmno"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10sp"
+                    android:hint="Enter Aadhar No."
+                    android:text="" />
+
+                <EditText
+                    android:id="@+id/pepn"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pepano"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10sp"
+                    android:hint="Enter Nationality"
+                    android:text="" />
+
+                <EditText
+                    android:id="@+id/pepage"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pepn"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10sp"
+                    android:hint="Enter Age"
+                    android:text="" />
+
+                <EditText
+                    android:id="@+id/pepemail"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pepage"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10sp"
+                    android:hint="Enter Email" />
+
+
+                <EditText
+                    android:id="@+id/peppass"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pepemail"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10sp"
+                    android:hint="Enter Password"
+                    android:inputType="textPassword" />
+
+                <Button
+                    android:id="@+id/pepsubbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/peppass"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25sp"
+                    android:text="SUBMIT" />
+
+            </LinearLayout>
+        </ScrollView>
     </LinearLayout>
-
-    <EditText
-        android:id="@+id/policeeditprofilefirstname"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10sp"
-        android:text=""
-        android:hint="Enter First Name"
-        android:layout_below="@+id/policeeditprofilelinear"
-        />
-
-    <EditText
-        android:id="@+id/policeeditprofilelastname"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/policeeditprofilefirstname"
-        android:layout_marginTop="10sp"
-        android:text=""
-        android:hint="Enter Last Name"/>
-
-    <EditText
-        android:id="@+id/policeeditprofileaddress"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text=""
-        android:hint="Enter Address"
-        android:layout_below="@+id/policeeditprofilelastname"
-        android:layout_marginTop="10sp"
-        />
-
-    <EditText
-        android:id="@+id/policeeditprofileemail"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/policeeditprofileaddress"
-        android:layout_marginTop="10sp"
-        android:text=""
-        android:hint="Enter Email"
-        />
-
-    <EditText
-        android:id="@+id/policeeditprofilebatchno"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/policeeditprofileemail"
-        android:layout_marginTop="10sp"
-        android:text=""
-        android:hint="Enter Batch No"
-        />
-
-    <EditText
-        android:id="@+id/policeeditprofileaadhar"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/policeeditprofilebatchno"
-        android:layout_marginTop="10sp"
-        android:text=""
-        android:hint="Enter Aadhar No"
-        />
-
-    <EditText
-        android:id="@+id/policeeditprofilephone"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/policeeditprofileaadhar"
-        android:layout_marginTop="10sp"
-        android:text=""
-        android:hint="Enter Phone" />
-
-    <Button
-        android:id="@+id/policeeditprofiledatepickerbutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Date of Birth"
-        android:textColor="@color/black"
-        style="?android:spinnerStyle"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/policeeditprofilephone"
-        android:layout_marginTop="10sp"
-        android:onClick="openDatePicker"
-        />
-
-    <EditText
-        android:id="@+id/policeeditprofileusername"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/policeeditprofiledatepickerbutton"
-        android:layout_marginTop="10sp"
-        android:text=""
-        android:hint="Username"
-        />
-
-    <EditText
-        android:id="@+id/policeeditprofilepassword"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:inputType="textPassword"
-        android:hint="Enter Password"
-        android:layout_marginTop="10sp"
-        android:layout_below="@id/policeeditprofileusername"
-        >
-    </EditText>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="SUBMIT"
-        android:layout_below="@+id/policeeditprofilepassword"
-        android:layout_marginTop="10sp"
-        />
-
 </RelativeLayout>

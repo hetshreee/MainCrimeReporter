@@ -99,7 +99,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:hint="USERNAME"
+                        android:hint="EMAIL"
                         android:textSize="17dp"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -118,7 +118,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:hint="COMPLAINT NAME"
+                            android:hint="VICTIM NAME"
                             android:textSize="17dp"
                             android:textStyle="bold" />
 

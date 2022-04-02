@@ -6,30 +6,31 @@
         <item>First Name</item>
         <item>Last Name</item>
         <item>Address</item>
-        <item>Email</item>
+        <item>Mobile No.</item>
+        <item>Aadhar No.</item>
         <item>Nationality</item>
-        <item>Phone</item>
-        <item>Date Of Birth</item>
-        <item>Username</item>
+        <item>Age</item>
+        <item>Email</item>
         <item>Password</item>
     </string-array>
 
-    <string-array name="policenames">
+    <string-array name="policeupprof">
         <item>Select</item>
         <item>First Name</item>
         <item>Last Name</item>
         <item>Address</item>
-        <item>Email</item>
-        <item>Batch No</item>
+        <item>Mobile No</item>
         <item>Aadhar No</item>
-        <item>Phone</item>
-        <item>Date Of Birth</item>
-        <item>Username</item>
+        <item>Nationality</item>
+        <item>Age</item>
+        <item>Email</item>
         <item>Password</item>
     </string-array>
 
-    <string-array name="cases">
+    <string-array name="status">
         <item>Select</item>
+        <item>Investigation Ongoing</item>
+        <item>Case Solved</item>
     </string-array>
 
     <string-array name="statistics">
