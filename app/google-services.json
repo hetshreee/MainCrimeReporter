@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "226300868452",
+    "firebase_url": "https://crimereportmgmt-default-rtdb.firebaseio.com",
     "project_id": "crimereportmgmt",
     "storage_bucket": "crimereportmgmt.appspot.com"
   },
