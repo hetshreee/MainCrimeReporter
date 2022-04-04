@@ -97,9 +97,6 @@
             android:name=".UserEditProfile"
             android:exported="false" />
         <activity
-            android:name=".UserCrimeRate"
-            android:exported="false" />
-        <activity
             android:name=".PoliceLogin"
             android:exported="false" />
         <activity

@@ -1,62 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UserRegSOS">
+    android:background="@color/white"
+    android:orientation="vertical">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/headerlayout"
         android:layout_width="match_parent"
         android:layout_height="220dp"
-        android:background="#293859" />
+        android:background="#293859"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <!--Top Header Layout-->
 
-    <TextView
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="SOS UPDATE"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img" />
+
+        <!--Top Profile Section -->
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/help"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/pcsscroll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SOS UPDATE"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="27dp"
-        android:layout_marginTop="15dp"
-        android:id="@+id/uvsos1"/>
+        app:layout_constraintTop_toBottomOf="@+id/headerlayout">
 
-    <ImageView
-        android:id="@+id/useregsosicon"
-        android:layout_width="wrap_content"
-        android:layout_height="125dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:src="@drawable/help"
-        android:layout_below="@+id/uvsos1"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp">
 
-    <EditText
-        android:id="@+id/userregsostypeofemergency"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/useregsosicon"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:hint="Type of Emergency" />
+            <EditText
+                android:id="@+id/sosupty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_bg"
+                android:hint="TYPE OF EMERGENCY"
+                android:padding="15dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
 
-    <EditText
-        android:id="@+id/userregsosphone"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/userregsostypeofemergency"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
-        android:hint="Phone Number" />
+            <EditText
+                android:id="@+id/sosupno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bg"
+                android:hint="PHONE NUMBER"
+                android:padding="15dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                app:layout_constraintTop_toBottomOf="@id/sosupty"/>
+
+            <EditText
+                android:id="@+id/sosupsts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bg"
+                android:hint="STATUS"
+                android:padding="15dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                app:layout_constraintTop_toBottomOf="@id/sosupno"/>
 
 
-    <TextView
-        android:id="@+id/userregsosdisplayloc"
-        android:layout_width="300dp"
-        android:layout_height="75dp"
-        android:layout_below="@id/userregsosphone"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
-        android:hint="STATUS"
-        android:textAlignment="center" />
-    
-</RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,7 +15,7 @@ public class UserRegSOS extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_reg_sos);
-        locationuserregsos = findViewById(R.id.userregsoslocation);
+        locationuserregsos = findViewById(R.id.locbtn);
 
         locationuserregsos.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PoliceOverview">
+    tools:context=".PoliceCriminalStat">
 
     <LinearLayout
         android:id="@+id/po1"
@@ -52,159 +52,195 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/pdview">
 
-                <TextView
-                    android:id="@+id/pcs2"
+                <Button
+                    android:id="@+id/jan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/po1"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="20dp"
                     android:background="@android:color/transparent"
-                    android:text="@string/hyp1"
+                    android:text="JANUARY 2021"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
 
-                <TextView
-                    android:id="@+id/pcs3"
+                <Button
+                    android:id="@+id/feb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="20dp"
                     android:background="@android:color/transparent"
-                    android:text="@string/hyp2"
+                    android:text="FEBRUARY 2021"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
 
-                <TextView
-                    android:id="@+id/pcs4"
+                <Button
+                    android:id="@+id/mar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="20dp"
                     android:background="@android:color/transparent"
-                    android:text="@string/hyp3"
+                    android:text="MARCH 2021"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
 
-                <TextView
-                    android:id="@+id/pcs5"
+                <Button
+                    android:id="@+id/apr"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="20dp"
                     android:background="@android:color/transparent"
-                    android:text="@string/hyp4"
+                    android:text="APRIL 2021"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
 
-                <TextView
-                    android:id="@+id/pcs6"
+                <Button
+                    android:id="@+id/may"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="20dp"
                     android:background="@android:color/transparent"
-                    android:text="@string/hyp5"
+                    android:text="MAY 2021"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
 
-                <TextView
-                    android:id="@+id/pcs7"
+                <Button
+                    android:id="@+id/jun"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="20dp"
                     android:background="@android:color/transparent"
-                    android:text="@string/hyp6"
+                    android:text="JUNE 2021"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
 
-                <TextView
-                    android:id="@+id/pcs8"
+                <Button
+                    android:id="@+id/jul"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="20dp"
                     android:background="@android:color/transparent"
-                    android:text="@string/hyp7"
+                    android:text="JULY 2021"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
 
-                <TextView
-                    android:id="@+id/pcs9"
+                <Button
+                    android:id="@+id/aug"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="20dp"
                     android:background="@android:color/transparent"
-                    android:text="@string/hyp8"
+                    android:text="AUGUST 2021"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
 
-                <TextView
-                    android:id="@+id/pcs10"
+                <Button
+                    android:id="@+id/sep"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="20dp"
                     android:background="@android:color/transparent"
-                    android:text="@string/hyp9"
+                    android:text="SEPTEMBER 2021"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
 
-                <TextView
-                    android:id="@+id/pcs11"
+                <Button
+                    android:id="@+id/oct"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="20dp"
                     android:background="@android:color/transparent"
-                    android:text="@string/hyp10"
+                    android:text="OCTOBER"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
 
-                <TextView
-                    android:id="@+id/pcs12"
+                <Button
+                    android:id="@+id/nov"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="20dp"
                     android:background="@android:color/transparent"
-                    android:text="@string/hyp11"
+                    android:text="NOVEMBER 2021"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
 
-                <TextView
-                    android:id="@+id/pcs13"
+                <Button
+                    android:id="@+id/dec"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="20dp"
                     android:background="@android:color/transparent"
-                    android:text="@string/hyp12"
+                    android:text="DECEMBER 2021"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20dp" />
 
-                <TextView
-                    android:id="@+id/pcs14"
+                <Button
+                    android:id="@+id/year2021"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="20dp"
                     android:background="@android:color/transparent"
-                    android:text="@string/hyp13"
+                    android:text="YEARLY STATISTICS 2021"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/janu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:text="JANUARY 2022"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/febr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:text="FEBRUARY 2022"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/marc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:text="MARCH 2022"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20dp" />

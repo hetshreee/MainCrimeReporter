@@ -52,11 +52,10 @@
         <entry key="..\:/D Drive/hetu project/MainCrimeReporter/app/src/main/res/layout/activity_police_dashboard.xml" value="0.25" />
         <entry key="..\:/D Drive/hetu project/MainCrimeReporter/app/src/main/res/layout/activity_police_login.xml" value="0.25" />
         <entry key="..\:/D Drive/hetu project/MainCrimeReporter/app/src/main/res/layout/activity_police_register.xml" value="0.25" />
-        <entry key="..\:/D Drive/hetu project/MainCrimeReporter/app/src/main/res/layout/activity_user_complaint.xml" value="0.25" />
         <entry key="..\:/D Drive/hetu project/MainCrimeReporter/app/src/main/res/layout/activity_user_login.xml" value="0.25" />
-        <entry key="..\:/D Drive/hetu project/MainCrimeReporter/app/src/main/res/layout/activity_user_menu.xml" value="0.25" />
-        <entry key="..\:/D Drive/hetu project/MainCrimeReporter/app/src/main/res/layout/activity_user_view_complaint.xml" value="0.25" />
         <entry key="..\:/D Drive/hetu project/MainCrimeReporter/app/src/main/res/layout/signup_fragment.xml" value="0.25" />
+        <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_choose_user.xml" value="0.21" />
+        <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_crime_rate.xml" value="0.67" />
         <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_police_case_det.xml" value="0.20416666666666666" />
         <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_police_cases.xml" value="0.20416666666666666" />
         <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_police_contact_info.xml" value="0.20416666666666666" />
@@ -74,7 +73,7 @@
         <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_police_update_sos.xml" value="0.20416666666666666" />
         <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_police_view_profile.xml" value="0.1675929884566054" />
         <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_user_complaint.xml" value="0.20416666666666666" />
-        <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_user_current_address.xml" value="0.20416666666666666" />
+        <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_user_current_address.xml" value="0.16" />
         <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_user_edit_profile.xml" value="0.20416666666666666" />
         <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_user_guide_book.xml" value="0.20416666666666666" />
         <entry key="..\:/MainCrimeReporter/app/src/main/res/layout/activity_user_login.xml" value="0.20416666666666666" />
