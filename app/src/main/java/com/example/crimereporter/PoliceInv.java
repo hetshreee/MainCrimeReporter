@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class PoliceCases extends AppCompatActivity {
+public class PoliceInv extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_police_cases);
+        setContentView(R.layout.activity_police_inv);
     }
 }

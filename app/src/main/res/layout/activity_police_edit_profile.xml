@@ -1,188 +1,191 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PoliceEditProfile">
+    android:background="@color/white"
+    android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/uepbg"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/headerlayout"
         android:layout_width="match_parent"
         android:layout_height="220dp"
         android:background="#293859"
-        android:orientation="horizontal" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <!--Top Header Layout-->
 
-    <ImageView
-        android:id="@+id/uep1"
-        android:layout_width="wrap_content"
-        android:layout_height="125dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/inferential" />
-
-    <TextView
-        android:id="@+id/usep1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/uep1"
-        android:layout_marginTop="15dp"
-        android:text="EDIT PROFILE"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="27dp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/uepbg">
-
-        <ScrollView
-            android:id="@+id/scrollviewlyout"
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="EDIT PROFILE"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="parent">
+            app:layout_constraintTop_toBottomOf="@+id/img" />
 
-            <LinearLayout
+        <!--Top Profile Section -->
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/inferential"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/pcsscroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/headerlayout"
+        tools:layout_editor_absoluteX="-53dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp">
+
+            <Spinner
+                android:id="@+id/pepspin"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="340dp"
-                android:orientation="vertical"
-                android:paddingBottom="120dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:spinnerMode="dropdown"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/pdview">
+                app:layout_constraintTop_toTopOf="parent" />
 
-                <LinearLayout
-                    android:id="@+id/usereditprofilelinear"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5sp"
-                    android:orientation="vertical">
+            <EditText
+                android:id="@+id/pepfname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_bg"
+                android:hint="FIRST NAME"
+                android:padding="15dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/pepspin" />
 
-                    <Spinner
-                        android:id="@+id/pepspin"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:layout_marginTop="15dp"
-                        android:spinnerMode="dropdown"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent" />
-                </LinearLayout>
+            <EditText
+                android:id="@+id/peplname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_bg"
+                android:hint="LAST NAME"
+                android:padding="15dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/pepfname" />
 
-                <EditText
-                    android:id="@+id/pepfname"
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/usereditprofilelinear"
-                    android:layout_centerHorizontal="true"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10sp"
-                    android:hint="Enter First Name"
-                    android:text="" />
+            <EditText
+                android:id="@+id/pepadd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_bg"
+                android:hint="ADDRESS"
+                android:padding="15dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/peplname" />
 
-                <EditText
-                    android:id="@+id/peplname"
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/pepfname"
-                    android:layout_centerHorizontal="true"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10sp"
-                    android:hint="Enter Last Name"
-                    android:text="" />
+            <EditText
+                android:id="@+id/pepmno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_bg"
+                android:hint="MOBILE NUMBER"
+                android:padding="15dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/pepadd" />
 
-                <EditText
-                    android:id="@+id/pepadd"
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/peplname"
-                    android:layout_centerHorizontal="true"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10sp"
-                    android:hint="Enter Address"
-                    android:text="" />
+            <EditText
+                android:id="@+id/pepano"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_bg"
+                android:hint="AADHAR NUMBER"
+                android:padding="15dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/pepmno" />
 
-                <EditText
-                    android:id="@+id/pepmno"
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/pepadd"
-                    android:layout_centerHorizontal="true"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10sp"
-                    android:hint="Enter Mobile No."
-                    android:text="" />
+            <EditText
+                android:id="@+id/pepn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_bg"
+                android:hint="NATIONALITY"
+                android:padding="15dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/pepano" />
 
-                <EditText
-                    android:id="@+id/pepano"
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/pepmno"
-                    android:layout_centerHorizontal="true"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10sp"
-                    android:hint="Enter Aadhar No."
-                    android:text="" />
+            <EditText
+                android:id="@+id/pepage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_bg"
+                android:hint="AGE"
+                android:padding="15dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/pepn" />
 
-                <EditText
-                    android:id="@+id/pepn"
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/pepano"
-                    android:layout_centerHorizontal="true"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10sp"
-                    android:hint="Enter Nationality"
-                    android:text="" />
+            <EditText
+                android:id="@+id/pepemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_bg"
+                android:hint="EMAIL"
+                android:padding="15dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/pepage" />
 
-                <EditText
-                    android:id="@+id/pepage"
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/pepn"
-                    android:layout_centerHorizontal="true"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10sp"
-                    android:hint="Enter Age"
-                    android:text="" />
+            <EditText
+                android:id="@+id/peppass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_bg"
+                android:hint="PASSWORD"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/pepemail" />
 
-                <EditText
-                    android:id="@+id/pepemail"
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/pepage"
-                    android:layout_centerHorizontal="true"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10sp"
-                    android:hint="Enter Email" />
+            <Button
+                android:id="@+id/pepsubbtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/button_bg"
+                android:text="SUBMIT"
+                app:layout_constraintTop_toBottomOf="@id/peppass" />
 
 
-                <EditText
-                    android:id="@+id/peppass"
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/pepemail"
-                    android:layout_centerHorizontal="true"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10sp"
-                    android:hint="Enter Password"
-                    android:inputType="textPassword" />
-
-                <Button
-                    android:id="@+id/pepsubbtn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/peppass"
-                    android:layout_centerHorizontal="true"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="25sp"
-                    android:text="SUBMIT" />
-
-            </LinearLayout>
-        </ScrollView>
-    </LinearLayout>
-</RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

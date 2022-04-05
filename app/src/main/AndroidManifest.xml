@@ -50,7 +50,7 @@
             android:name=".PoliceCaseDet"
             android:exported="false" />
         <activity
-            android:name=".PoliceCases"
+            android:name=".PoliceInv"
             android:exported="false" />
         <activity
             android:name=".PoliceUpcomingAct"

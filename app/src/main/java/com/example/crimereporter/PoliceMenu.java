@@ -15,10 +15,10 @@ public class PoliceMenu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_police_menu);
-        profilepm=findViewById(R.id.pmprofile);
-        citpm=findViewById(R.id.pmcit);
-        upactpm=findViewById(R.id.pmupact);
-        logoutpm=findViewById(R.id.pmlogout);
+        profilepm=findViewById(R.id.pm1);
+        citpm=findViewById(R.id.pm2);
+        upactpm=findViewById(R.id.pm3);
+        logoutpm=findViewById(R.id.pm4);
 
         profilepm.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,7 +31,7 @@ public class PoliceMenu extends AppCompatActivity {
         citpm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), PoliceContactInfo.class);
+                Intent i = new Intent(getApplicationContext(), UserGuideBook.class);
                 startActivity(i);
             }
         });

@@ -64,70 +64,69 @@
                 android:padding="15dp"
                 android:textSize="18dp"
                 android:textStyle="bold"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
                 android:id="@+id/uccno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
                 android:background="@drawable/edittext_bg"
                 android:hint="COMPLAINT NUMBER"
                 android:padding="15dp"
                 android:textSize="18dp"
                 android:textStyle="bold"
-                android:layout_marginTop="15dp"
-                app:layout_constraintTop_toBottomOf="@id/ucusername"/>
+                app:layout_constraintTop_toBottomOf="@id/ucusername" />
 
             <EditText
                 android:id="@+id/ucvicname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
                 android:background="@drawable/edittext_bg"
                 android:hint="VICTIM NAME"
                 android:padding="15dp"
                 android:textSize="18dp"
                 android:textStyle="bold"
-                android:layout_marginTop="15dp"
-                app:layout_constraintTop_toBottomOf="@id/uccno"/>
+                app:layout_constraintTop_toBottomOf="@id/uccno" />
 
             <EditText
                 android:id="@+id/ucdesc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
                 android:background="@drawable/edittext_bg"
                 android:hint="DESCRIPTION"
                 android:padding="15dp"
                 android:textSize="18dp"
                 android:textStyle="bold"
-                android:layout_marginTop="15dp"
-                app:layout_constraintTop_toBottomOf="@id/ucvicname"/>
+                app:layout_constraintTop_toBottomOf="@id/ucvicname" />
 
             <EditText
                 android:id="@+id/ucadd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
                 android:background="@drawable/edittext_bg"
                 android:hint="STATUS"
                 android:padding="15dp"
                 android:textSize="18dp"
                 android:textStyle="bold"
-                android:layout_marginTop="15dp"
-                app:layout_constraintTop_toBottomOf="@id/ucdesc"/>
+                app:layout_constraintTop_toBottomOf="@id/ucdesc" />
 
             <EditText
                 android:id="@+id/ucinvby"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
                 android:background="@drawable/edittext_bg"
                 android:hint="INVESTIGATION BY"
                 android:padding="15dp"
                 android:textSize="18dp"
                 android:textStyle="bold"
-                android:layout_marginTop="15dp"
-                app:layout_constraintTop_toBottomOf="@id/ucadd"/>
+                app:layout_constraintTop_toBottomOf="@id/ucadd" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
