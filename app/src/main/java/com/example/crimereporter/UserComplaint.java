@@ -62,7 +62,8 @@ public class UserComplaint extends AppCompatActivity {
                             }
                             else
                             {
-                                String Id = String.valueOf(maxid+1);
+                                String Id = databaseReference4.push().getKey();
+                                databaseReference4.child("Complaint").child(Id).child("ID").setValue(Id);
                                 databaseReference4.child("Complaint").child(Id).child("Mobile No").setValue(mobnoucc);
                                 databaseReference4.child("Complaint").child(Id).child("Victim Name").setValue(vicnameucc);
                                 databaseReference4.child("Complaint").child(Id).child("Description").setValue(descucc);
