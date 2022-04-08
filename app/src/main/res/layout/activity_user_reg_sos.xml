@@ -50,7 +50,7 @@
         app:layout_constraintTop_toBottomOf="@id/headerlayout">
 
         <EditText
-            android:id="@+id/ucmno"
+            android:id="@+id/uctype"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -64,7 +64,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/ucvicname"
+            android:id="@+id/ucphno"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -73,23 +73,49 @@
             android:padding="15dp"
             android:textSize="18dp"
             android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@id/ucmno" />
+            app:layout_constraintTop_toBottomOf="@id/uctype" />
+
+        <EditText
+            android:id="@+id/currentaddlatitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="LATITUDE"
+            android:padding="15dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/currentaddlocationbtn" />
+
+        <EditText
+            android:id="@+id/currentaddlongitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="LONGITUDE"
+            android:padding="15dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/currentaddlatitude" />
 
         <Button
-            android:id="@+id/locbtn"
+            android:id="@+id/currentaddlocationbtn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginHorizontal="40dp"
             android:layout_marginTop="35dp"
             android:background="@drawable/button_bg"
             android:text="GET MY LOCATION"
-            app:layout_constraintTop_toBottomOf="@id/ucvicname" />
+            app:layout_constraintTop_toBottomOf="@id/ucphno" />
 
-        <EditText
-            android:id="@+id/ucdesc"
+        <TextView
+            android:id="@+id/currentaddaddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/edittext_bg"
             android:hint="MY ADDRESS"
             android:inputType="textMultiLine"
@@ -97,10 +123,10 @@
             android:textAlignment="center"
             android:textSize="18dp"
             android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@id/locbtn" />
+            app:layout_constraintTop_toBottomOf="@id/currentaddlongitude" />
 
         <Button
-            android:id="@+id/subuc"
+            android:id="@+id/ucsubsos"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginHorizontal="40dp"
@@ -109,7 +135,7 @@
             android:text="SUBMIT"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/ucdesc" />
+            app:layout_constraintTop_toBottomOf="@id/currentaddaddress" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
