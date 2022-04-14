@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -51,7 +52,7 @@ public class UserComplaint extends AppCompatActivity {
                 final String mobnoucc = mobnouc.getText().toString();
                 final String vicnameucc = vicnameuc.getText().toString();
                 final String descucc = descuc.getText().toString();
-                if(mobnoucc.isEmpty()||vicnameucc.isEmpty()||descucc.isEmpty()){
+                /*if(mobnoucc.isEmpty()||vicnameucc.isEmpty()||descucc.isEmpty()){
                     Toast.makeText(getApplicationContext(), "Please Enter the Details...!!", Toast.LENGTH_SHORT).show();
                 }else{
                     databaseReference4.child("Complaint").addListenerForSingleValueEvent(new ValueEventListener() {
@@ -75,7 +76,30 @@ public class UserComplaint extends AppCompatActivity {
                         @Override
                         public void onCancelled(@NonNull DatabaseError error) { }
                     });
-                }
+                }*/
+                databaseReference4.child("Complaint").addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        final String mobnoucc = mobnouc.getText().toString();
+                        final String vicnameucc = vicnameuc.getText().toString();
+                        final String descucc = descuc.getText().toString();
+                        if(!TextUtils.isEmpty(mobnoucc)){
+                            String id = databaseReference4.push().getKey();
+                            Case casee = new Case(id, mobnoucc, vicnameucc,descucc);
+                            databaseReference4.child(id).setValue(casee);
+                            Toast.makeText(getApplicationContext(), "COMPLAINT REGISTERED", Toast.LENGTH_SHORT).show();
+                        }else{
+                            Toast.makeText(getApplicationContext(), "ENTER VALID DETAILS", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+
+
+                });
             }
         });
 

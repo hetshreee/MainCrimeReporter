@@ -36,7 +36,7 @@ public class PoliceDashboard extends AppCompatActivity {
         ivpdcom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(),PoliceCaseDet.class);
+                Intent i = new Intent(getApplicationContext(),PoliceViewComplain.class);
                 startActivity(i);
             }
         });

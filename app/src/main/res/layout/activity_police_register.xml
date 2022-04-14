@@ -152,7 +152,7 @@
                 android:id="@+id/policesignupnationality"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:hint="Enter Nationality"
+                android:hint="Enter Batch Number"
                 android:paddingLeft="20dp"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"

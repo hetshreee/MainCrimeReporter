@@ -88,6 +88,19 @@
             android:textStyle="bold"
             app:layout_constraintTop_toBottomOf="@id/ucvicname" />
 
+        <EditText
+            android:id="@+id/ucdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="ENTER DATE"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/ucdesc" />
+
 
         <Button
             android:id="@+id/addeviuc"
@@ -97,7 +110,7 @@
             android:layout_marginTop="35dp"
             android:background="@drawable/button_bg"
             android:text="ADD EVIDENCE"
-            app:layout_constraintTop_toBottomOf="@id/ucdesc" />
+            app:layout_constraintTop_toBottomOf="@id/ucdate" />
 
         <Button
             android:id="@+id/subuc"
